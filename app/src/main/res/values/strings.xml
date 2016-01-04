@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MyTutorialApplication</string>
+    <string name="app_name">Tutorial</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_test">TestActivity</string>
 </resources>

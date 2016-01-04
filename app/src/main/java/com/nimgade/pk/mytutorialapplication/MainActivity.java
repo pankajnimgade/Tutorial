@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                Snackbar.make(view, "I will leave this to you", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
         });
@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
 
         listView = (ListView) findViewById(R.id.MainActivity_listView);
         ArrayAdapter<MyListItem> adapter =
-                new ArrayAdapter<MyListItem>(getApplicationContext(), android.R.layout.simple_list_item_1, StartUp.getMyListItems());
+                new ArrayAdapter<MyListItem>(getApplicationContext(), R.layout.simple_list_item_1, StartUp.getMyListItems());
         listView.setAdapter(adapter);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     android:orientation="vertical"
     tools:context="activities.list.first.TestActivity">
 
@@ -13,6 +14,7 @@
         android:layout_height="match_parent"
         android:gravity="center"
         android:orientation="vertical">
+
 
         <Button
             android:id="@+id/TestActivity_button"
