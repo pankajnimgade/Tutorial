@@ -38,6 +38,6 @@ public class MyListItem {
      */
     @Override
     public String toString() {
-        return super.toString();
+        return this.activity_name;
     }
 }
