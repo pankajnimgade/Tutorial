@@ -20,8 +20,10 @@ public class TestActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.my_custom_toolbar);
         setSupportActionBar(toolbar);
 
-        initializeUI();
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
+
+        initializeUI();
     }
 
     private void initializeUI() {

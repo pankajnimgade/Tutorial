@@ -4,6 +4,7 @@ import android.app.Application;
 
 import java.util.ArrayList;
 
+import activities.list.first.JustifyAlignmentActivity;
 import activities.list.first.TestActivity;
 
 /**
@@ -19,8 +20,8 @@ public class StartUp extends Application {
     }
 
     private static void initializeList() {
-        MyListItem item_1 = new MyListItem("TestActivity", TestActivity.class);
-        myListItems.add(item_1);
+        myListItems.add(new MyListItem("TestActivity", TestActivity.class));
+        myListItems.add(new MyListItem("Justify Alignment", JustifyAlignmentActivity.class));
     }
 
     @Override
