@@ -34,6 +34,16 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.nimgade.pk.mytutorialapplication.MainActivity" />
         </activity>
+        <activity
+            android:name="activities.list.first.DraggingViewsActivity"
+            android:label="@string/title_activity_draging_views">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nimgade.pk.mytutorialapplication.MainActivity" />
+        </activity>
+        <activity
+            android:name="activities.list.first.DroppingViewActivity"
+            android:label="@string/title_activity_dropping_view"></activity>
     </application>
 
 </manifest>

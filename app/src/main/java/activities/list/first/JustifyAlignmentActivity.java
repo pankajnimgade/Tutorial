@@ -40,7 +40,7 @@ public class JustifyAlignmentActivity extends AppCompatActivity {
                 "you learn.\n\n" +
                 "Most of us did not take courses on metacognition or learning theory when we were\n" +
                 "growing up. We were expected to learn, but rarely taught to learn.\n" +
-                "But we assume that ifyou're holding this book, you want to learn Java. And you\n" +
+                "But we assume that if you're holding this book, you want to learn Java. And you\n" +
                 "probably don't want to spend a lot of time.";
 
         String text = "<html><body>" + "<p align=\"justify\" >";

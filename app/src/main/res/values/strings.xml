@@ -3,4 +3,6 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_test">TestActivity</string>
     <string name="title_activity_justify_alignment">JustifyAlignmentActivity</string>
+    <string name="title_activity_draging_views">DragingViewsActivity</string>
+    <string name="title_activity_dropping_view">DroppingViewActivity</string>
 </resources>
