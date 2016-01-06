@@ -4,6 +4,7 @@ import android.app.Application;
 
 import java.util.ArrayList;
 
+import activities.list.first.CustomListViewActivity;
 import activities.list.first.DraggingViewsActivity;
 import activities.list.first.DroppingViewActivity;
 import activities.list.first.JustifyAlignmentActivity;
@@ -26,6 +27,8 @@ public class StartUp extends Application {
         myListItems.add(new MyListItem("Justify Alignment", JustifyAlignmentActivity.class));
         myListItems.add(new MyListItem("Dragging Views", DraggingViewsActivity.class));
         myListItems.add(new MyListItem("Dropping Views", DroppingViewActivity.class));
+        myListItems.add(new MyListItem("Custom ListView", CustomListViewActivity.class));
+
     }
 
     @Override

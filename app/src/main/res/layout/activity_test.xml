@@ -22,6 +22,20 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="New Button" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New RadioBoutton" />
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New RadioButton" />
+
+
     </LinearLayout>
 
 </LinearLayout>

@@ -5,4 +5,5 @@
     <string name="title_activity_justify_alignment">JustifyAlignmentActivity</string>
     <string name="title_activity_draging_views">DragingViewsActivity</string>
     <string name="title_activity_dropping_view">DroppingViewActivity</string>
+    <string name="title_activity_custom_list_view">CustomListViewActivity</string>
 </resources>

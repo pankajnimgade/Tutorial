@@ -37,7 +37,7 @@ public class DroppingViewActivity extends Activity {
                 ClipData data = ClipData.newPlainText("", "");
                 View.DragShadowBuilder shadowBuilder = new View.DragShadowBuilder(view);
                 view.startDrag(data, shadowBuilder, view, 0);
-                view.setVisibility(View.INVISIBLE);
+                view.setVisibility(View.VISIBLE);
                 return true;
             } else {
                 return false;
