@@ -6,4 +6,16 @@
     <string name="title_activity_draging_views">DragingViewsActivity</string>
     <string name="title_activity_dropping_view">DroppingViewActivity</string>
     <string name="title_activity_custom_list_view">CustomListViewActivity</string>
+    <string name="title_activity_load_data">LoadDataActivity</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+    <string name="title_activity_navigation_map">NavigationMapActivity</string>
 </resources>

@@ -13,7 +13,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:contentDescription="This is for testing layouts and different Views">
 
 
         <Button
@@ -21,19 +22,31 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="New Button" />
+            android:text="New Button"
+            android:visibility="visible" />
 
-        <RadioButton
-            android:id="@+id/radioButton2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="New RadioBoutton" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="8dp"
+            android:orientation="horizontal">
 
-        <RadioButton
-            android:id="@+id/radioButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="New RadioButton" />
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginRight="-50dp"
+                android:layout_weight="1"
+                android:hint="some Text"
+                android:paddingLeft="4dp" />
+
+            <ImageView
+                android:id="@+id/imageButton"
+                style="?actionBarStyle"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@android:drawable/ic_menu_search" />
+        </LinearLayout>
 
 
     </LinearLayout>

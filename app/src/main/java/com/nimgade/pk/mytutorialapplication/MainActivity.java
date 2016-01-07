@@ -36,6 +36,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
+
         initializeUI();
     }
 
@@ -53,6 +55,8 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        adapter.notifyDataSetChanged();
     }
 
     @Override
