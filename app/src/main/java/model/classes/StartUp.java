@@ -9,6 +9,7 @@ import activities.list.first.DraggingViewsActivity;
 import activities.list.first.DroppingViewActivity;
 import activities.list.first.JustifyAlignmentActivity;
 import activities.list.first.LoadDataActivity;
+import activities.list.first.NoteListActivity;
 import activities.list.first.TestActivity;
 
 /**
@@ -30,6 +31,7 @@ public class StartUp extends Application {
         myListItems.add(new MyListItem("Dropping Views", DroppingViewActivity.class));
         myListItems.add(new MyListItem("Custom ListView", CustomListViewActivity.class));
         myListItems.add(new MyListItem("Load Data in spinner", LoadDataActivity.class));
+        myListItems.add(new MyListItem("NoteListActivity", NoteListActivity.class));
 
     }
 

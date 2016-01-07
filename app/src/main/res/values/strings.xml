@@ -18,4 +18,6 @@
 
     <string name="action_example">Example action</string>
     <string name="title_activity_navigation_map">NavigationMapActivity</string>
+    <string name="title_activity_note_list">NoteListActivity</string>
+    <string name="title_activity_note_edit">NoteEditActivity</string>
 </resources>
