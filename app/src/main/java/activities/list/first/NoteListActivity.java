@@ -78,11 +78,9 @@ public class NoteListActivity extends Activity {
     }
 
     private void setUpList() {
-
         strings = new ArrayList<>();
         for (int i = 0; i < 4; i++) {
             strings.add("Element_1_" + i);
         }
     }
-
 }
