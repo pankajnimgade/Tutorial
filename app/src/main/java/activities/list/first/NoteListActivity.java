@@ -65,11 +65,11 @@ public class NoteListActivity extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        Log.d("NoteListActivity1",""+data.getStringExtra(NoteListActivity.ELEMENT_VALUE));
+        Log.d("NoteListActivity1", "" + data.getStringExtra(NoteListActivity.ELEMENT_VALUE));
 
         if (requestCode == 123) {
             if (resultCode == RESULT_OK) {
-                Log.d("NoteListActivity2",""+data.getStringExtra(NoteListActivity.ELEMENT_VALUE));
+                Log.d("NoteListActivity2", "" + data.getStringExtra(NoteListActivity.ELEMENT_VALUE));
                 boolean isNewElement = data.getBooleanExtra(NoteListActivity.NEW_ELEMENT, false);
                 if (isNewElement) {
                     strings.add("" + data.getStringExtra(NoteListActivity.ELEMENT_VALUE));

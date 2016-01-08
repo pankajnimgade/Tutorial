@@ -8,8 +8,8 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:supportsRtl="true"
         android:largeHeap="true"
+        android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
@@ -72,7 +72,15 @@
         </activity>
         <activity
             android:name="activities.list.first.NoteEditActivity"
-            android:label="@string/title_activity_note_edit"></activity>
+            android:label="@string/title_activity_note_edit" />
+        <activity
+            android:name="activities.list.first.DragTestActivityActivity"
+            android:label="@string/title_activity_drag_test"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nimgade.pk.mytutorialapplication.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

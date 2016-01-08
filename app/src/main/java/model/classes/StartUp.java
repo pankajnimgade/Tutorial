@@ -5,6 +5,7 @@ import android.app.Application;
 import java.util.ArrayList;
 
 import activities.list.first.CustomListViewActivity;
+import activities.list.first.DragTestActivityActivity;
 import activities.list.first.DraggingViewsActivity;
 import activities.list.first.DroppingViewActivity;
 import activities.list.first.JustifyAlignmentActivity;
@@ -32,6 +33,7 @@ public class StartUp extends Application {
         myListItems.add(new MyListItem("Custom ListView", CustomListViewActivity.class));
         myListItems.add(new MyListItem("Load Data in spinner", LoadDataActivity.class));
         myListItems.add(new MyListItem("NoteListActivity", NoteListActivity.class));
+        myListItems.add(new MyListItem("Drag View Test", DragTestActivityActivity.class));
 
     }
 
