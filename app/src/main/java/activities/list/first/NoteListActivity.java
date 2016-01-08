@@ -1,9 +1,10 @@
 package activities.list.first;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
@@ -14,7 +15,7 @@ import com.nimgade.pk.mytutorialapplication.R;
 
 import java.util.ArrayList;
 
-public class NoteListActivity extends Activity {
+public class NoteListActivity extends AppCompatActivity {
 
     private ListView listView;
     private ArrayList<String> strings;
@@ -27,6 +28,10 @@ public class NoteListActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_note_list);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.my_custom_toolbar);
+        setSupportActionBar(toolbar);
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         listView = (ListView) findViewById(R.id.NoteListActivity_listView);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {

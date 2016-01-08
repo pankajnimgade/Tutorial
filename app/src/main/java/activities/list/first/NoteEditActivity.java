@@ -1,8 +1,9 @@
 package activities.list.first;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -11,7 +12,7 @@ import android.widget.Toast;
 
 import com.nimgade.pk.mytutorialapplication.R;
 
-public class NoteEditActivity extends Activity {
+public class NoteEditActivity extends AppCompatActivity {
 
     private EditText editText;
     private Button button;
@@ -22,6 +23,10 @@ public class NoteEditActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_note_edit);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.my_custom_toolbar);
+        setSupportActionBar(toolbar);
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         editText = (EditText) findViewById(R.id.NoteEditActivity_editText);
         button = (Button) findViewById(R.id.NoteEditActivity_button);
