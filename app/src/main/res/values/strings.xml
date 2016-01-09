@@ -21,4 +21,6 @@
     <string name="title_activity_note_list">NoteListActivity</string>
     <string name="title_activity_note_edit">NoteEditActivity</string>
     <string name="title_activity_drag_test">DragTestActivityActivity</string>
+    <string name="title_activity_network_call_list">NetworkCallListActivity</string>
+    <string name="title_activity_shared_prefrences">SharedPrefrencesActivity</string>
 </resources>

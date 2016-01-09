@@ -11,7 +11,9 @@ import activities.list.first.DroppingViewActivity;
 import activities.list.first.JustifyAlignmentActivity;
 import activities.list.first.LoadDataActivity;
 import activities.list.first.NoteListActivity;
+import activities.list.first.SharedPreferencesActivity;
 import activities.list.first.TestActivity;
+import network.calls.ativities.NetworkCallListActivity;
 
 /**
  * Created by Pankaj Nimgade on 04-01-2016.
@@ -27,6 +29,8 @@ public class StartUp extends Application {
 
     private static void initializeList() {
         myListItems.add(new MyListItem("TestActivity", TestActivity.class));
+        myListItems.add(new MyListItem("Network Call", NetworkCallListActivity.class));
+        myListItems.add(new MyListItem("Shared Preferences Test", SharedPreferencesActivity.class));
         myListItems.add(new MyListItem("Justify Alignment", JustifyAlignmentActivity.class));
         myListItems.add(new MyListItem("Dragging Views", DraggingViewsActivity.class));
         myListItems.add(new MyListItem("Dropping Views", DroppingViewActivity.class));
