@@ -97,6 +97,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.nimgade.pk.mytutorialapplication.MainActivity" />
         </activity>
+        <activity
+            android:name="network.calls.ativities.PostRequestActivity"
+            android:label="@string/title_activity_post_request"
+            android:parentActivityName="network.calls.ativities.NetworkCallListActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="network.calls.ativities.NetworkCallListActivity" />
+        </activity>
     </application>
 
 </manifest>
