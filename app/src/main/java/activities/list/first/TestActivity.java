@@ -64,6 +64,7 @@ public class TestActivity extends AppCompatActivity {
                 HttpURLConnection httpURLConnection = (HttpURLConnection)url.openConnection();
                 httpURLConnection.setDoOutput(true);
                 httpURLConnection.setRequestMethod("POST");
+
                 httpURLConnection.connect();
 
                 JsonObject jsonObject = new JsonObject();
