@@ -105,6 +105,22 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="network.calls.activities.NetworkCallListActivity" />
         </activity>
+        <activity
+            android:name="loaders.test.activities.LoadersListActivity"
+            android:label="@string/title_activity_loaders_list"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nimgade.pk.mytutorialapplication.MainActivity" />
+        </activity>
+        <activity
+            android:name="loaders.test.activities.LoaderTestOneActivity"
+            android:label="@string/title_activity_loader_test_one"
+            android:parentActivityName="loaders.test.activities.LoadersListActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="loaders.test.activities.LoadersListActivity" />
+        </activity>
     </application>
 
 </manifest>

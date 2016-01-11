@@ -24,4 +24,6 @@
     <string name="title_activity_network_call_list">NetworkCallListActivity</string>
     <string name="title_activity_shared_prefrences">SharedPrefrencesActivity</string>
     <string name="title_activity_post_request">PostRequestActivity</string>
+    <string name="title_activity_loaders_list">LoadersListActivity</string>
+    <string name="title_activity_loader_test_one">LoaderTestOneActivity</string>
 </resources>
