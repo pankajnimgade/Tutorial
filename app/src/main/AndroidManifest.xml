@@ -82,7 +82,7 @@
                 android:value="com.nimgade.pk.mytutorialapplication.MainActivity" />
         </activity>
         <activity
-            android:name="network.calls.ativities.NetworkCallListActivity"
+            android:name="network.calls.activities.NetworkCallListActivity"
             android:label="@string/title_activity_network_call_list"
             android:parentActivityName=".MainActivity">
             <meta-data
@@ -98,12 +98,12 @@
                 android:value="com.nimgade.pk.mytutorialapplication.MainActivity" />
         </activity>
         <activity
-            android:name="network.calls.ativities.PostRequestActivity"
+            android:name="network.calls.activities.PostRequestActivity"
             android:label="@string/title_activity_post_request"
-            android:parentActivityName="network.calls.ativities.NetworkCallListActivity">
+            android:parentActivityName="network.calls.activities.NetworkCallListActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="network.calls.ativities.NetworkCallListActivity" />
+                android:value="network.calls.activities.NetworkCallListActivity" />
         </activity>
     </application>
 

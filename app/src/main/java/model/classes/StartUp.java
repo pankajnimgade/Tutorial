@@ -13,7 +13,7 @@ import activities.list.first.LoadDataActivity;
 import activities.list.first.NoteListActivity;
 import activities.list.first.SharedPreferencesActivity;
 import activities.list.first.TestActivity;
-import network.calls.ativities.NetworkCallListActivity;
+import network.calls.activities.NetworkCallListActivity;
 
 /**
  * Created by Pankaj Nimgade on 04-01-2016.

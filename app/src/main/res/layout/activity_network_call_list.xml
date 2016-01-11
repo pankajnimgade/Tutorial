@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:contentDescription="This activity contains ListView, which Direct to activities which make Network call"
     android:orientation="vertical"
-    tools:context="network.calls.ativities.NetworkCallListActivity">
+    tools:context="network.calls.activities.NetworkCallListActivity">
 
     <include layout="@layout/my_custom_toolbar" />
 

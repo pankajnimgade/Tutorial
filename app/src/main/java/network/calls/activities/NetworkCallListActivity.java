@@ -1,19 +1,11 @@
-package network.calls.ativities;
+package network.calls.activities;
 
-import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 
-import com.google.gson.JsonObject;
 import com.nimgade.pk.mytutorialapplication.R;
 
-import org.apache.commons.io.IOUtils;
-
-import java.io.DataOutputStream;
-import java.net.HttpURLConnection;
-import java.net.URL;
 import java.util.ArrayList;
 
 import model.classes.MyListItem;
@@ -36,13 +28,7 @@ public class NetworkCallListActivity extends AppCompatActivity {
     }
 
     private void initializeUI() {
-        myListItems_activities = new ArrayList<>();
-        myListItems_activities.add(new MyListItem("Post JSON to URL", PostRequestActivity.class));
 
 
     }
-
-
-
-
 }
