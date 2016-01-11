@@ -3,6 +3,8 @@ package network.calls.activities;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
 import com.nimgade.pk.mytutorialapplication.R;
 
@@ -12,6 +14,7 @@ import model.classes.MyListItem;
 
 public class NetworkCallListActivity extends AppCompatActivity {
 
+    private ListView listView;
     private ArrayList<MyListItem> myListItems_activities;
 
     @Override
@@ -29,6 +32,11 @@ public class NetworkCallListActivity extends AppCompatActivity {
 
     private void initializeUI() {
 
+        listView = (ListView) findViewById(R.id.NetworkCallListActivity_ListView);
+        myListItems_activities = new ArrayList<>();
+        myListItems_activities.add(new MyListItem("Post a Request", PostRequestActivity.class));
 
+        ArrayAdapter<MyListItem> adapter = new ArrayAdapter<MyListItem>(getApplicationContext(), R.layout.simple_list_item_1, myListItems_activities);
+        listView.setAdapter(adapter);
     }
 }
