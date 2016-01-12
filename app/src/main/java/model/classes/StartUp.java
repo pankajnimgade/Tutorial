@@ -13,7 +13,8 @@ import activities.list.first.LoadDataActivity;
 import activities.list.first.NoteListActivity;
 import activities.list.first.SharedPreferencesActivity;
 import activities.list.first.TestActivity;
-import listview.test.activities.ListViewTestOneActivity;
+import activities.list.first.TestLayoutActivity;
+import listview.test.activities.ListViewListActivity;
 import loaders.test.activities.LoadersListActivity;
 import network.calls.activities.NetworkCallListActivity;
 
@@ -34,14 +35,15 @@ public class StartUp extends Application {
         myListItems.add(new MyListItem("Network Call", NetworkCallListActivity.class));
         myListItems.add(new MyListItem("Shared Preferences Test", SharedPreferencesActivity.class));
         myListItems.add(new MyListItem("Loader Test Test", LoadersListActivity.class));
+        myListItems.add(new MyListItem("ListView Test", ListViewListActivity.class));
         myListItems.add(new MyListItem("Justify Alignment", JustifyAlignmentActivity.class));
-        myListItems.add(new MyListItem("ListView Test One", ListViewTestOneActivity.class));
         myListItems.add(new MyListItem("Dragging Views", DraggingViewsActivity.class));
         myListItems.add(new MyListItem("Dropping Views", DroppingViewActivity.class));
         myListItems.add(new MyListItem("Custom ListView", CustomListViewActivity.class));
         myListItems.add(new MyListItem("Load Data in spinner", LoadDataActivity.class));
         myListItems.add(new MyListItem("NoteListActivity", NoteListActivity.class));
         myListItems.add(new MyListItem("Drag View Test", DragTestActivityActivity.class));
+        myListItems.add(new MyListItem("Test layout", TestLayoutActivity.class));
 
     }
 

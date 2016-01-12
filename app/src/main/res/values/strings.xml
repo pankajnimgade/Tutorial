@@ -27,4 +27,6 @@
     <string name="title_activity_loaders_list">LoadersListActivity</string>
     <string name="title_activity_loader_test_one">LoaderTestOneActivity</string>
     <string name="title_activity_list_view_test_one">ListViewTestOneActivity</string>
+    <string name="title_activity_test_layout">TestLayoutActivity</string>
+    <string name="title_activity_listv_view_list">ListvViewListActivity</string>
 </resources>

@@ -124,10 +124,36 @@
         <activity
             android:name="listview.test.activities.ListViewTestOneActivity"
             android:label="@string/title_activity_list_view_test_one"
+            android:parentActivityName="listview.test.activities.ListViewListActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="listview.test.activities.ListViewListActivity" />
+        </activity>
+        <activity
+            android:name="activities.list.first.TestLayoutActivity"
+            android:label="@string/title_activity_test_layout"
+            android:parentActivityName=".MainActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nimgade.pk.mytutorialapplication.MainActivity" />
+        </activity>
+        <activity
+            android:name="listview.test.activities.ListViewListActivity"
+            android:label="@string/title_activity_listv_view_list"
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.nimgade.pk.mytutorialapplication.MainActivity" />
+        </activity>
+        <activity
+            android:name="listview.test.activities.CustomListViewActivity"
+            android:label="@string/title_activity_custom_list_view"
+            android:parentActivityName="listview.test.activities.ListViewListActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="listview.test.activities.ListViewListActivity" />
         </activity>
     </application>
 
