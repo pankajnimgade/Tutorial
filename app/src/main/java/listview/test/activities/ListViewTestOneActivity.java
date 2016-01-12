@@ -17,11 +17,13 @@ import org.json.JSONObject;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class ListViewTestOneActivity extends AppCompatActivity {
 
     private ListView listView;
     private ArrayList<LearningStandards> learningStandardses;
+    private ArrayList<MyGroup> myGroups;
     private ProgressDialog progressDialog;
 
 
@@ -46,7 +48,77 @@ public class ListViewTestOneActivity extends AppCompatActivity {
 
         listView = (ListView) findViewById(R.id.ListViewTestOneActivity_listView);
         learningStandardses = new ArrayList<>();
-        new DownloadJSON().execute();
+//        new DownloadJSON().execute();
+        new DownloadAndPrepareGroupJSON().execute();
+    }
+
+    private class DownloadAndPrepareGroupJSON extends AsyncTask<Void, Void, Void> {
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+            progressDialog.show();
+        }
+
+        @Override
+        protected Void doInBackground(Void... params) {
+
+            try {
+                myGroups = new ArrayList<>();
+                URL url = new URL("http://54.152.108.131/iphone111/getLearningStandards");
+                HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
+                httpURLConnection.connect();
+
+                String result = IOUtils.toString(httpURLConnection.getInputStream());
+                System.out.println("" + result);
+
+                JSONObject jsonObject = new JSONObject(result);
+                JSONArray jsonArray = jsonObject.getJSONArray("LearningStandards");
+                HashMap<String, MyGroup> stringMyGroupHashMap = new HashMap<>();
+
+                for (int i = 0; i < jsonArray.length(); i++) {
+                    JSONObject singleObject = jsonArray.getJSONObject(i);
+                    JSONObject learningStandardsJsonObject = singleObject.getJSONObject("LearningStandards");
+                    LearningStandards learningStandards = new LearningStandards();
+                    if (!stringMyGroupHashMap.containsKey(learningStandardsJsonObject.getString("standard_title"))) {
+                        MyGroup myGroup = new MyGroup();
+                        LearningStandards single_learningStandards = new LearningStandards();
+                        single_learningStandards.setStandard_title(learningStandardsJsonObject.getString("standard_title"));
+                        single_learningStandards.setRef_id(learningStandardsJsonObject.getString("ref_id"));
+                        single_learningStandards.setStandard_title(learningStandardsJsonObject.getString("description"));
+                        myGroup.getLearningStandards().add(single_learningStandards);
+                        myGroup.setStandard_title(learningStandardsJsonObject.getString("standard_title"));
+                        stringMyGroupHashMap.put(learningStandardsJsonObject.getString("standard_title"), myGroup);
+                    } else {
+                        MyGroup myGroup = stringMyGroupHashMap.get(learningStandardsJsonObject.getString("standard_title"));
+                        LearningStandards single_learningStandards = new LearningStandards();
+                        single_learningStandards.setStandard_title(learningStandardsJsonObject.getString("standard_title"));
+                        single_learningStandards.setRef_id(learningStandardsJsonObject.getString("ref_id"));
+                        single_learningStandards.setStandard_title(learningStandardsJsonObject.getString("description"));
+                        myGroup.getLearningStandards().add(single_learningStandards);
+                    }
+
+                }
+
+                for (MyGroup myGroup : stringMyGroupHashMap.values()) {
+                    myGroups.add(myGroup);
+                }
+                System.out.println("Size of hashMap: " + stringMyGroupHashMap.size());
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+            return null;
+        }
+
+        @Override
+        protected void onPostExecute(Void aVoid) {
+            super.onPostExecute(aVoid);
+            progressDialog.dismiss();
+            System.out.println("learningStandardses: size: " + learningStandardses.size());
+            ArrayAdapter<MyGroup> adapter =
+                    new ArrayAdapter<MyGroup>(getApplicationContext(), R.layout.simple_list_item_1, myGroups);
+            listView.setAdapter(adapter);
+        }
     }
 
     private class DownloadJSON extends AsyncTask<Void, Void, Void> {
@@ -95,6 +167,38 @@ public class ListViewTestOneActivity extends AppCompatActivity {
             ArrayAdapter<LearningStandards> adapter =
                     new ArrayAdapter<LearningStandards>(getApplicationContext(), R.layout.simple_list_item_1, learningStandardses);
             listView.setAdapter(adapter);
+        }
+    }
+
+    private class MyGroup {
+
+        private ArrayList<LearningStandards> learningStandards;
+        private String standard_title;
+
+        public MyGroup() {
+            this.learningStandards = new ArrayList<>();
+            this.standard_title = "";
+        }
+
+        public ArrayList<LearningStandards> getLearningStandards() {
+            return learningStandards;
+        }
+
+        public void setLearningStandards(ArrayList<LearningStandards> learningStandards) {
+            this.learningStandards = learningStandards;
+        }
+
+        public String getStandard_title() {
+            return standard_title;
+        }
+
+        public void setStandard_title(String standard_title) {
+            this.standard_title = standard_title;
+        }
+
+        @Override
+        public String toString() {
+            return standard_title;
         }
     }
 
