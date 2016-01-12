@@ -1,6 +1,7 @@
 package listview.test.activities;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -83,7 +84,7 @@ public class CustomListViewActivity extends AppCompatActivity {
                 row = a_layoutInflater.inflate(R.layout.single_item_custom_one, parent, false);
                 holder = new ViewHolder();
                 holder.product_name = (TextView) row.findViewById(R.id.single_item_custom_one_textView);
-//                holder.item_LinearLayout = (LinearLayout) row.findViewById(R.id.single_item_custom_one_linearLayout);
+                holder.item_LinearLayout = (LinearLayout) row.findViewById(R.id.single_item_custom_one_linearLayout);
                 row.setTag(holder);
             } else {
                 holder = (ViewHolder) row.getTag();
@@ -92,6 +93,11 @@ public class CustomListViewActivity extends AppCompatActivity {
             final ProductInfo productInfo = a_productInfos.get(position);
             holder.product_name.setText(""+productInfo.getText());
 
+            if (productInfo.isSelected) {
+                holder.item_LinearLayout.setBackgroundColor(Color.parseColor("#ff44ff"));
+            }else {
+                holder.item_LinearLayout.setBackgroundColor(Color.parseColor("#ffffff"));
+            }
 
             return row;
         }
