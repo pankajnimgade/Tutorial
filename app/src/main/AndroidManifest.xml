@@ -121,6 +121,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="loaders.test.activities.LoadersListActivity" />
         </activity>
+        <activity
+            android:name="listview.test.activities.ListViewTestOneActivity"
+            android:label="@string/title_activity_list_view_test_one"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nimgade.pk.mytutorialapplication.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

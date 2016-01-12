@@ -13,6 +13,7 @@ import activities.list.first.LoadDataActivity;
 import activities.list.first.NoteListActivity;
 import activities.list.first.SharedPreferencesActivity;
 import activities.list.first.TestActivity;
+import listview.test.activities.ListViewTestOneActivity;
 import loaders.test.activities.LoadersListActivity;
 import network.calls.activities.NetworkCallListActivity;
 
@@ -34,6 +35,7 @@ public class StartUp extends Application {
         myListItems.add(new MyListItem("Shared Preferences Test", SharedPreferencesActivity.class));
         myListItems.add(new MyListItem("Loader Test Test", LoadersListActivity.class));
         myListItems.add(new MyListItem("Justify Alignment", JustifyAlignmentActivity.class));
+        myListItems.add(new MyListItem("ListView Test One", ListViewTestOneActivity.class));
         myListItems.add(new MyListItem("Dragging Views", DraggingViewsActivity.class));
         myListItems.add(new MyListItem("Dropping Views", DroppingViewActivity.class));
         myListItems.add(new MyListItem("Custom ListView", CustomListViewActivity.class));
