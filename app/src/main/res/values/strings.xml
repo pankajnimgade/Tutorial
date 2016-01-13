@@ -29,4 +29,6 @@
     <string name="title_activity_list_view_test_one">ListViewTestOneActivity</string>
     <string name="title_activity_test_layout">TestLayoutActivity</string>
     <string name="title_activity_listv_view_list">ListvViewListActivity</string>
+    <string name="title_activity_services_list">ServicesListActivity</string>
+    <string name="title_activity_service_test_one">ServiceTestOneActivity</string>
 </resources>

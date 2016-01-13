@@ -155,6 +155,22 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="listview.test.activities.ListViewListActivity" />
         </activity>
+        <activity
+            android:name="services.list.activity.ServicesListActivity"
+            android:label="@string/title_activity_services_list"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nimgade.pk.mytutorialapplication.MainActivity" />
+        </activity>
+        <activity
+            android:name="services.list.activity.ServiceTestOneActivity"
+            android:label="@string/title_activity_service_test_one"
+            android:parentActivityName="services.list.activity.ServicesListActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="services.list.activity.ServicesListActivity" />
+        </activity>
     </application>
 
 </manifest>
