@@ -11,12 +11,14 @@ import activities.list.first.DroppingViewActivity;
 import activities.list.first.JustifyAlignmentActivity;
 import activities.list.first.LoadDataActivity;
 import activities.list.first.NoteListActivity;
+import activities.list.first.RandomTestActivity;
 import activities.list.first.SharedPreferencesActivity;
 import activities.list.first.TestActivity;
 import activities.list.first.TestLayoutActivity;
 import listview.test.activities.ListViewListActivity;
 import loaders.test.activities.LoadersListActivity;
 import network.calls.activities.NetworkCallListActivity;
+import services.list.activity.ServicesListActivity;
 
 /**
  * Created by Pankaj Nimgade on 04-01-2016.
@@ -36,7 +38,9 @@ public class StartUp extends Application {
         myListItems.add(new MyListItem("Shared Preferences Test", SharedPreferencesActivity.class));
         myListItems.add(new MyListItem("Loader Test Test", LoadersListActivity.class));
         myListItems.add(new MyListItem("ListView Test", ListViewListActivity.class));
+        myListItems.add(new MyListItem("Services Test", ServicesListActivity.class));
         myListItems.add(new MyListItem("Justify Alignment", JustifyAlignmentActivity.class));
+        myListItems.add(new MyListItem("RandomTestActivity", RandomTestActivity.class));
         myListItems.add(new MyListItem("Dragging Views", DraggingViewsActivity.class));
         myListItems.add(new MyListItem("Dropping Views", DroppingViewActivity.class));
         myListItems.add(new MyListItem("Custom ListView", CustomListViewActivity.class));

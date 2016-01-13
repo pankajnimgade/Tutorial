@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="OneTimesTables">
+        <item>1 x 1 = </item>
+        <item>1 x 2 = </item>
+        <item>1 x 3 = </item>
+        <item>1 x 4 = </item>
+        <item>1 x 5 = </item>
+        <item>1 x 6 = </item>
+        <item>1 x 7 = </item>
+        <item>1 x 8 = </item>
+        <item>1 x 9 = </item>
+        <item>1 x 10 = </item>
+        <item>1 x 11 = </item>
+        <item>1 x 12 = </item>
+    </array>
+</resources>
