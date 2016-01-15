@@ -196,6 +196,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.nimgade.pk.mytutorialapplication.MainActivity" />
         </activity>
+        <activity
+            android:name="spinner.list.activities.SpinnerTestOneActivity"
+            android:label="@string/title_activity_spinner_test_one"
+            android:parentActivityName="spinner.list.activities.SpinnerListActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="spinner.list.activities.SpinnerListActivity" />
+        </activity>
     </application>
 
 </manifest>

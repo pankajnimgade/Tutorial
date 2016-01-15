@@ -20,6 +20,7 @@ import listview.test.activities.ListViewListActivity;
 import loaders.test.activities.LoadersListActivity;
 import network.calls.activities.NetworkCallListActivity;
 import services.list.activity.ServicesListActivity;
+import spinner.list.activities.SpinnerListActivity;
 
 /**
  * Created by Pankaj Nimgade on 04-01-2016.
@@ -39,6 +40,7 @@ public class StartUp extends Application {
         myListItems.add(new MyListItem("Shared Preferences Test", SharedPreferencesActivity.class));
         myListItems.add(new MyListItem("Loader Test Test", LoadersListActivity.class));
         myListItems.add(new MyListItem("ListView Test", ListViewListActivity.class));
+        myListItems.add(new MyListItem("Spinner Test", SpinnerListActivity.class));
         myListItems.add(new MyListItem("Services Test", ServicesListActivity.class));
         myListItems.add(new MyListItem("Justify Alignment", JustifyAlignmentActivity.class));
         myListItems.add(new MyListItem("RandomTestActivity", RandomTestActivity.class));
