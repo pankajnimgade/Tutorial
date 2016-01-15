@@ -38,6 +38,7 @@ public class SpinnerTestOneActivity extends AppCompatActivity {
 
         ArrayAdapter<Contact> adapter =
                 new ArrayAdapter<Contact>(getApplicationContext(), R.layout.simple_spinner_dropdown_item, contacts);
+        adapter.setDropDownViewResource(R.layout.simple_spinner_dropdown_item);
 
         spinner.setAdapter(adapter);
 

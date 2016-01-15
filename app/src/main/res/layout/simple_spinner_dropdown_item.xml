@@ -3,8 +3,10 @@
     android:id="@android:id/text1"
     style="?android:attr/spinnerDropDownItemStyle"
     android:layout_width="match_parent"
-    android:height="25dp"
+    android:layout_height="48dp"
+    android:layout_margin="4dp"
+    android:height="48dp"
+    android:minHeight="48dp"
     android:ellipsize="marquee"
     android:singleLine="true"
-    android:textColor="@android:color/black"
-    android:layout_height="wrap_content" />
+    android:textColor="@android:color/black" />
