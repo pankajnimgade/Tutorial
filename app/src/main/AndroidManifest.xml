@@ -182,7 +182,15 @@
         <activity
             android:name="activities.list.first.ExampleOneActivity"
             android:label="@string/title_activity_example_one"
-            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:parentActivityName=".MainActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nimgade.pk.mytutorialapplication.MainActivity" />
+        </activity>
+        <activity
+            android:name="spinner.list.activities.SpinnerListActivity"
+            android:label="@string/title_activity_spinner_list"
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"

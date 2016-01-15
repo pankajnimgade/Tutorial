@@ -33,4 +33,5 @@
     <string name="title_activity_service_test_one">ServiceTestOneActivity</string>
     <string name="title_activity_random_test">RandomTestActivity</string>
     <string name="title_activity_example_one">ExampleOneActivity</string>
+    <string name="title_activity_spinner_list">SpinnerListActivity</string>
 </resources>
