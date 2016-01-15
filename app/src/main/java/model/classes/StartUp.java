@@ -8,6 +8,7 @@ import activities.list.first.CustomListViewActivity;
 import activities.list.first.DragTestActivityActivity;
 import activities.list.first.DraggingViewsActivity;
 import activities.list.first.DroppingViewActivity;
+import activities.list.first.ExampleOneActivity;
 import activities.list.first.JustifyAlignmentActivity;
 import activities.list.first.LoadDataActivity;
 import activities.list.first.NoteListActivity;
@@ -48,6 +49,7 @@ public class StartUp extends Application {
         myListItems.add(new MyListItem("NoteListActivity", NoteListActivity.class));
         myListItems.add(new MyListItem("Drag View Test", DragTestActivityActivity.class));
         myListItems.add(new MyListItem("Test layout", TestLayoutActivity.class));
+        myListItems.add(new MyListItem("example test", ExampleOneActivity.class));
 
     }
 
