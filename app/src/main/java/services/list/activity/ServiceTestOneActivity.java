@@ -1,7 +1,9 @@
 package services.list.activity;
 
-import android.os.Bundle;
 import android.app.Activity;
+import android.app.IntentService;
+import android.content.Intent;
+import android.os.Bundle;
 
 import com.nimgade.pk.mytutorialapplication.R;
 
@@ -12,6 +14,25 @@ public class ServiceTestOneActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_service_test_one);
         getActionBar().setDisplayHomeAsUpEnabled(true);
+    }
+
+
+    public class MyService extends IntentService {
+
+        /**
+         * Creates an IntentService.  Invoked by your subclass's constructor.
+         *
+         * @param name Used to name the worker thread, important only for debugging.
+         */
+        public MyService() {
+            super("hello");
+        }
+
+
+        @Override
+        protected void onHandleIntent(Intent intent) {
+
+        }
     }
 
 }
