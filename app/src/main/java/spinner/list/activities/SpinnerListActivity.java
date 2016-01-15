@@ -1,8 +1,12 @@
 package spinner.list.activities;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.nimgade.pk.mytutorialapplication.R;
@@ -34,6 +38,20 @@ public class SpinnerListActivity extends AppCompatActivity {
         listView = (ListView) findViewById(R.id.SpinnerListActivity_listView);
 
         myListItems = new ArrayList<>();
+        myListItems.add(new MyListItem("Sinner test One", SpinnerTestOneActivity.class));
+
+        ArrayAdapter<MyListItem> adapter =
+                new ArrayAdapter<MyListItem>(getApplicationContext(), R.layout.simple_list_item_1, myListItems);
+        listView.setAdapter(adapter);
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                MyListItem item = (MyListItem) listView.getItemAtPosition(position);
+                Intent myIntent = new Intent(getApplicationContext(), item.getActivity_class());
+                startActivity(myIntent);
+            }
+        });
 
     }
 
