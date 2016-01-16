@@ -36,16 +36,17 @@ public class ServicesListActivity extends AppCompatActivity {
         listView = (ListView) findViewById(R.id.ServicesListActivity_listView);
         ArrayList<MyListItem> myListItems = new ArrayList<>();
         myListItems.add(new MyListItem("Service Test One", ServiceTestOneActivity.class));
+        myListItems.add(new MyListItem("Service Test Two", ServiceTestTwoActivity.class));
 
         ArrayAdapter<MyListItem> adapter =
-                new ArrayAdapter<MyListItem>(getApplicationContext(),R.layout.simple_list_item_1,myListItems);
+                new ArrayAdapter<MyListItem>(getApplicationContext(), R.layout.simple_list_item_1, myListItems);
         listView.setAdapter(adapter);
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                MyListItem myListItem = (MyListItem)listView.getItemAtPosition(position);
-                Intent myIntent = new Intent(getApplicationContext(),myListItem.getActivity_class());
+                MyListItem myListItem = (MyListItem) listView.getItemAtPosition(position);
+                Intent myIntent = new Intent(getApplicationContext(), myListItem.getActivity_class());
                 startActivity(myIntent);
             }
         });
