@@ -171,7 +171,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="services.list.activity.ServicesListActivity" />
         </activity>
-        <service android:name="services.list.activity.ServiceTestOneActivity$MyService"
+        <service android:name="services.list.activity.ServiceTestOneActivity$MyServiceTestOne"
             android:exported="false"/>
         <activity
             android:name="activities.list.first.RandomTestActivity"
