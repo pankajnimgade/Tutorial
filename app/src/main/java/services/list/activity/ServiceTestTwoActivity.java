@@ -56,7 +56,7 @@ public class ServiceTestTwoActivity extends AppCompatActivity {
 
     }
 
-    public class HelloService extends Service {
+    public static class HelloService extends Service {
         private Looper mServiceLooper;
         private ServiceHandler mServiceHandler;
 

@@ -49,7 +49,7 @@ public class ServiceTestOneActivity extends AppCompatActivity {
     }
 
 
-    public class MyServiceTestOne extends IntentService {
+    public static class MyServiceTestOne extends IntentService {
 
         /**
          * Creates an IntentService.  Invoked by your subclass's constructor.
