@@ -1,16 +1,17 @@
 package services.list.activity;
 
-import android.app.Activity;
 import android.app.IntentService;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
 import com.nimgade.pk.mytutorialapplication.R;
 
-public class ServiceTestOneActivity extends Activity {
+public class ServiceTestOneActivity extends AppCompatActivity {
 
     private Button start_service_Button;
     private Button stop_service_Button;
@@ -19,7 +20,10 @@ public class ServiceTestOneActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_service_test_one);
-        getActionBar().setDisplayHomeAsUpEnabled(true);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.my_custom_toolbar);
+        setSupportActionBar(toolbar);
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
 
         initializeUI();
