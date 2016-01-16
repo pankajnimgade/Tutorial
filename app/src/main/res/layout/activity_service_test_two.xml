@@ -12,6 +12,27 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="4dp"
-        android:orientation="vertical"></LinearLayout>
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/ServiceTestTwoActivity_start_service_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="8dp"
+            android:text="Start Service"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/ServiceTestTwoActivity_stop_service_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="8dp"
+            android:text="Stop Service"
+            android:textAllCaps="false" />
+    </LinearLayout>
 
 </LinearLayout>

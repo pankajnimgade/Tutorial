@@ -35,8 +35,8 @@ public class ServiceTestOneActivity extends AppCompatActivity {
         start_service_Button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-
+                Intent intent = new Intent(getApplicationContext(), MyServiceTestOne.class);
+                startService(intent);
             }
         });
 
