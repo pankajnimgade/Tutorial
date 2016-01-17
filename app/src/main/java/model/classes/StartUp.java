@@ -1,6 +1,7 @@
 package model.classes;
 
 import android.app.Application;
+import android.database.sqlite.SQLiteDatabase;
 
 import java.util.ArrayList;
 
@@ -21,6 +22,7 @@ import loaders.test.activities.LoadersListActivity;
 import network.calls.activities.NetworkCallListActivity;
 import services.list.activity.ServicesListActivity;
 import spinner.list.activities.SpinnerListActivity;
+import sqlite.list.activity.CreateDatabase;
 
 /**
  * Created by Pankaj Nimgade on 04-01-2016.
@@ -30,9 +32,13 @@ public class StartUp extends Application {
     private static ArrayList<MyListItem> myListItems = new ArrayList<>();
 
     static {
+
+
         myListItems = new ArrayList<>();
         initializeList();
     }
+
+
 
     private static void initializeList() {
         myListItems.add(new MyListItem("TestActivity", TestActivity.class));
@@ -58,7 +64,8 @@ public class StartUp extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-
+        CreateDatabase createAllTables = new CreateDatabase(getApplicationContext());
+        SQLiteDatabase database = createAllTables.getWritableDatabase();
     }
 
     public static ArrayList<MyListItem> getMyListItems() {

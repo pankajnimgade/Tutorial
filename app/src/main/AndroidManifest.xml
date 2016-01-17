@@ -230,6 +230,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="spinner.list.activities.SpinnerListActivity" />
         </activity>
+        <activity
+            android:name="sqlite.list.activity.SqliteListActivity"
+            android:label="@string/title_activity_sqlite_list"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nimgade.pk.mytutorialapplication.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

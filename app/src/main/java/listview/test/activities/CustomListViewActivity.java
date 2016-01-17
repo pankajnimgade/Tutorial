@@ -18,6 +18,11 @@ import com.nimgade.pk.mytutorialapplication.R;
 
 import java.util.ArrayList;
 
+/**
+ * this is used to answer following question
+ * <p>
+ *     { http://stackoverflow.com/questions/34741895/list-view-item-selected-background-changed-it-changes-other-item-also/ }
+ */
 public class CustomListViewActivity extends AppCompatActivity {
 
     private ListView listView;

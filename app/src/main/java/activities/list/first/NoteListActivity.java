@@ -15,6 +15,11 @@ import com.nimgade.pk.mytutorialapplication.R;
 
 import java.util.ArrayList;
 
+/**
+ * This activity is made to answer this question
+ * <p><
+ * { http://stackoverflow.com/questions/34637554/sending-data-from-a-second-activity-to-the-first-one-doesnt-work-android }
+ */
 public class NoteListActivity extends AppCompatActivity {
 
     private ListView listView;

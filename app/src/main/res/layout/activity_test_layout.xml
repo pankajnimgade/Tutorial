@@ -10,8 +10,8 @@
         android:id="@+id/scrollView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:fillViewport="true"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:fillViewport="true">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -29,7 +29,17 @@
                     android:id="@+id/textView2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:maxLines="1"
                     android:text="New Text" />
+
+                <EditText
+                    android:id="@+id/editText2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:lineSpacingMultiplier="1"
+                    android:maxLines="10" />
             </LinearLayout>
 
             <LinearLayout
@@ -44,8 +54,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:completionThreshold="1"
-                    android:drawableLeft="@android:drawable/ic_menu_search"
-                    android:text="" />
+                    android:drawableLeft="@android:drawable/ic_menu_search" />
 
                 <TextView
                     android:id="@+id/textView"

@@ -13,6 +13,11 @@ import android.widget.Spinner;
 import com.nimgade.pk.mytutorialapplication.R;
 import com.squareup.picasso.Picasso;
 
+/**
+ * this activity was made to to answer
+ * <p>
+ * this question { http://stackoverflow.com/questions/34835392/android-cant-seemed-to-assign-variable-with-new-value/}
+ */
 public class SpinnerTestTwoActivity extends AppCompatActivity {
 
     private Spinner url_Spinner;
