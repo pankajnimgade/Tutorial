@@ -13,7 +13,6 @@ import com.nimgade.pk.mytutorialapplication.R;
 
 import java.util.ArrayList;
 
-import listview.test.activities.SqliteTestOneActivity;
 import model.classes.MyListItem;
 
 public class SqliteListActivity extends AppCompatActivity {

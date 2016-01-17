@@ -240,7 +240,7 @@
                 android:value="com.nimgade.pk.mytutorialapplication.MainActivity" />
         </activity>
         <activity
-            android:name="listview.test.activities.SqliteTestOneActivity"
+            android:name="sqlite.list.activity.SqliteTestOneActivity"
             android:label="@string/title_activity_sqlite_test_one"
             android:parentActivityName="sqlite.list.activity.SqliteListActivity">
             <meta-data

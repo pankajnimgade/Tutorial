@@ -1,4 +1,4 @@
-package listview.test.activities;
+package sqlite.list.activity;
 
 import android.content.ContentValues;
 import android.content.Context;
