@@ -14,4 +14,14 @@
         <item>1 x 11 = </item>
         <item>1 x 12 = </item>
     </array>
+
+    <array name="url_images">
+        <item>https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7emgtQk5rdEE3bW8/style_icons_system_intro_principles_simple.png</item>
+        <item>https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7MGhHV055eGk0R2M/style_icons_system_intro_principles_intuitive.png</item>
+        <item>https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7MG80dmpHT0RidGs/style_icons_system_intro_principles_actionable.png</item>
+        <item>https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7blViQzF0azNqZU0/style_icons_system_intro_principles_consistent.png</item>
+        <item>https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7VXlvR05VSWhPZTg/style_icons_system_grid_geometry2.png</item>
+        <item>https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7SUV1b2Z3b3NBazA/style_icons_system_best_do1.png</item>
+        <item>https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7azQ4WThPb25NOGc/style_icons_system_best_do3.png</item>
+    </array>
 </resources>

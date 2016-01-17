@@ -221,6 +221,15 @@
         <service
             android:name="services.list.activity.ServiceTestTwoActivity$HelloService"
             android:exported="false" />
+
+        <activity
+            android:name="spinner.list.activities.SpinnerTestTwoActivity"
+            android:label="@string/title_activity_spinner_test_two"
+            android:parentActivityName="spinner.list.activities.SpinnerListActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="spinner.list.activities.SpinnerListActivity" />
+        </activity>
     </application>
 
 </manifest>
