@@ -2,6 +2,7 @@ package model.classes;
 
 import android.app.Application;
 import android.database.sqlite.SQLiteDatabase;
+import android.util.Log;
 
 import java.util.ArrayList;
 
@@ -23,6 +24,7 @@ import network.calls.activities.NetworkCallListActivity;
 import services.list.activity.ServicesListActivity;
 import spinner.list.activities.SpinnerListActivity;
 import sqlite.list.activity.CreateDatabase;
+import sqlite.list.activity.SqliteListActivity;
 
 /**
  * Created by Pankaj Nimgade on 04-01-2016.
@@ -32,8 +34,6 @@ public class StartUp extends Application {
     private static ArrayList<MyListItem> myListItems = new ArrayList<>();
 
     static {
-
-
         myListItems = new ArrayList<>();
         initializeList();
     }
@@ -48,6 +48,7 @@ public class StartUp extends Application {
         myListItems.add(new MyListItem("ListView Test", ListViewListActivity.class));
         myListItems.add(new MyListItem("Spinner Test", SpinnerListActivity.class));
         myListItems.add(new MyListItem("Services Test", ServicesListActivity.class));
+        myListItems.add(new MyListItem("SQLite Test", SqliteListActivity.class));
         myListItems.add(new MyListItem("Justify Alignment", JustifyAlignmentActivity.class));
         myListItems.add(new MyListItem("RandomTestActivity", RandomTestActivity.class));
         myListItems.add(new MyListItem("Dragging Views", DraggingViewsActivity.class));
@@ -64,8 +65,11 @@ public class StartUp extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+        Log.d("StartUp: ","onCreate: try creating database");
+
         CreateDatabase createAllTables = new CreateDatabase(getApplicationContext());
         SQLiteDatabase database = createAllTables.getWritableDatabase();
+
     }
 
     public static ArrayList<MyListItem> getMyListItems() {
