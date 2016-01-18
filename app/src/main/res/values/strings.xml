@@ -39,4 +39,5 @@
     <string name="title_activity_spinner_test_two">SpinnerTestTwoActivity</string>
     <string name="title_activity_sqlite_list">SqliteListActivity</string>
     <string name="title_activity_sqlite_test_one">SqliteTestOneActivity</string>
+    <string name="title_activity_test_text_view">TestTextViewActivity</string>
 </resources>

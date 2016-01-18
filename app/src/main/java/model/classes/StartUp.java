@@ -18,6 +18,7 @@ import activities.list.first.RandomTestActivity;
 import activities.list.first.SharedPreferencesActivity;
 import activities.list.first.TestActivity;
 import activities.list.first.TestLayoutActivity;
+import activities.list.first.TestTextViewActivity;
 import listview.test.activities.ListViewListActivity;
 import loaders.test.activities.LoadersListActivity;
 import network.calls.activities.NetworkCallListActivity;
@@ -59,6 +60,7 @@ public class StartUp extends Application {
         myListItems.add(new MyListItem("Drag View Test", DragTestActivityActivity.class));
         myListItems.add(new MyListItem("Test layout", TestLayoutActivity.class));
         myListItems.add(new MyListItem("example test", ExampleOneActivity.class));
+        myListItems.add(new MyListItem("test text view style", TestTextViewActivity.class));
 
     }
 
