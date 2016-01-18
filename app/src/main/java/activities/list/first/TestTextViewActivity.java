@@ -36,7 +36,7 @@ public class TestTextViewActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                int count = (new Random()).nextInt(6);
+                int count = (new Random()).nextInt(5);
                 textView.setTextAppearance(getApplicationContext(),id[count]);
             }
         });
