@@ -2,12 +2,16 @@ package activities.list.first;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.text.InputFilter;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
+import android.widget.EditText;
 
 import com.nimgade.pk.mytutorialapplication.R;
 
 public class TestLayoutActivity extends Activity {
+
+    private EditText editText;
 
 
     @Override
@@ -29,6 +33,11 @@ public class TestLayoutActivity extends Activity {
         ArrayAdapter<String> adapter
                 = new ArrayAdapter<String>(getApplicationContext(), R.layout.simple_list_item_1, list);
         autoCompleteTextView.setAdapter(adapter);
+
+        editText = (EditText)findViewById(R.id.TestLayoutActivity_editText);
+        InputFilter[] inputFilter = {new InputFilter.LengthFilter(editText.getText().toString().length())};
+        editText.setFilters(inputFilter);
+
     }
 
 }

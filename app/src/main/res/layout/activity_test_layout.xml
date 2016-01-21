@@ -30,23 +30,24 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:inputType="text"
+                    android:maxLength="25"
                     android:maxLines="1"
                     android:text="New Text" />
 
                 <EditText
-                    android:id="@+id/editText2"
+                    android:id="@+id/TestLayoutActivity_editText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="textMultiLine"
                     android:lineSpacingMultiplier="1"
+                    android:text="easlighnawei th"
                     android:maxLines="10" />
 
                 <Spinner
+                    android:id="@+id/spinner"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:entries="@array/OneTimesTables"
-                    
-                    android:id="@+id/spinner" />
+
+                    android:entries="@array/OneTimesTables" />
             </LinearLayout>
 
             <LinearLayout
