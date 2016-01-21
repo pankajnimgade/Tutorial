@@ -6,14 +6,15 @@ import android.support.v7.widget.Toolbar;
 
 import com.nimgade.pk.mytutorialapplication.R;
 
+/**
+ * {http://www.androidhub4you.com/2014/10/android-custom-shape-imageview-rounded.html}
+ */
 public class CustomImageViewActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_custome_image_view);
-        getActionBar().setDisplayHomeAsUpEnabled(true);
-
         Toolbar toolbar = (Toolbar) findViewById(R.id.my_custom_toolbar);
         setSupportActionBar(toolbar);
 
@@ -24,5 +25,6 @@ public class CustomImageViewActivity extends AppCompatActivity {
 
     private void initializeUI() {
     }
+
 
 }

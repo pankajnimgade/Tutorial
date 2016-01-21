@@ -15,6 +15,37 @@
         android:orientation="vertical">
 
 
+        <custom.list.activities.TriangleImageView
+            android:id="@+id/CustomImageViewActivity_triangle_imageView"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="fitCenter"
+            android:src="@drawable/gohan" />
+
+        <custom.list.activities.RoundedImageView
+            android:id="@+id/CustomImageViewActivity_rounded_imageView"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="fitCenter"
+            android:src="@drawable/gohan" />
+
+        <custom.list.activities.OvalImageView
+            android:id="@+id/CustomImageViewActivity_oval_imageView"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="fitCenter"
+            android:src="@drawable/gohan" />
+
+        <custom.list.activities.HexagonImageView
+            android:id="@+id/CustomImageViewActivity_hexagon_imageView"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="fitCenter"
+            android:src="@drawable/gohan" />
     </LinearLayout>
 
 </LinearLayout>
