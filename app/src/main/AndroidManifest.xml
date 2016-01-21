@@ -255,6 +255,22 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.nimgade.pk.mytutorialapplication.MainActivity" />
         </activity>
+        <activity
+            android:name="custom.list.activities.CustomListActivity"
+            android:label="@string/title_activity_custom_list"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nimgade.pk.mytutorialapplication.MainActivity" />
+        </activity>
+        <activity
+            android:name="custom.list.activities.CustomImageViewActivity"
+            android:label="@string/title_activity_custome_image_view"
+            android:parentActivityName="custom.list.activities.CustomListActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="custom.list.activities.CustomListActivity" />
+        </activity>
     </application>
 
 </manifest>

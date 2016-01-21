@@ -40,4 +40,6 @@
     <string name="title_activity_sqlite_list">SqliteListActivity</string>
     <string name="title_activity_sqlite_test_one">SqliteTestOneActivity</string>
     <string name="title_activity_test_text_view">TestTextViewActivity</string>
+    <string name="title_activity_custom_list">CustomListActivity</string>
+    <string name="title_activity_custome_image_view">CustomeImageViewActivity</string>
 </resources>
