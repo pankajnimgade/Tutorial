@@ -42,4 +42,5 @@
     <string name="title_activity_test_text_view">TestTextViewActivity</string>
     <string name="title_activity_custom_list">CustomListActivity</string>
     <string name="title_activity_custome_image_view">CustomeImageViewActivity</string>
+    <string name="title_activity_list_vew_test_three">ListVewTestThreeActivity</string>
 </resources>

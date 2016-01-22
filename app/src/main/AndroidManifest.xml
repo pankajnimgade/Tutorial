@@ -271,6 +271,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="custom.list.activities.CustomListActivity" />
         </activity>
+        <activity
+            android:name="listview.test.activities.ListVewTestThreeActivity"
+            android:label="@string/title_activity_list_vew_test_three"
+            android:parentActivityName="listview.test.activities.ListViewListActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="listview.test.activities.ListViewListActivity" />
+        </activity>
     </application>
 
 </manifest>

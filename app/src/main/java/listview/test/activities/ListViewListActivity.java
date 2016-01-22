@@ -37,6 +37,7 @@ public class ListViewListActivity extends AppCompatActivity {
         listView = (ListView) findViewById(R.id.ListViewListActivity_listView);
         list_MyListItems.add(new MyListItem("ListView-Test-One", ListViewTestOneActivity.class));
         list_MyListItems.add(new MyListItem("ListView-Test-Two", CustomListViewActivity.class));
+        list_MyListItems.add(new MyListItem("ListView-Test-Three", ListVewTestThreeActivity.class));
         ArrayAdapter<MyListItem> adapter =
                 new ArrayAdapter<MyListItem>(getApplicationContext(), R.layout.simple_list_item_1, list_MyListItems);
         listView.setAdapter(adapter);
