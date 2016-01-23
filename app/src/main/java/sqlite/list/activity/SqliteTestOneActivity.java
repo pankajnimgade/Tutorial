@@ -29,6 +29,7 @@ public class SqliteTestOneActivity extends AppCompatActivity {
     }
 
     private void initializeUI() {
+
         save_Button = (Button) findViewById(R.id.SqliteTestOneActivity_button);
         save_Button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -39,6 +40,8 @@ public class SqliteTestOneActivity extends AppCompatActivity {
                 myReader.close();
             }
         });
+
+
     }
 
     private static class MyReader {
