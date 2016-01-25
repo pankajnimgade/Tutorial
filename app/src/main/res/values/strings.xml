@@ -43,4 +43,7 @@
     <string name="title_activity_custom_list">CustomListActivity</string>
     <string name="title_activity_custome_image_view">CustomeImageViewActivity</string>
     <string name="title_activity_list_vew_test_three">ListVewTestThreeActivity</string>
+    <string name="title_activity_deserialize_train_object">DeserializeTrainObjectActivity</string>
+    <string name="title_activity_animation_list">AnimationListActivity</string>
+    <string name="title_activity_animation_test_one">AnimationTestOneActivity</string>
 </resources>

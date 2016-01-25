@@ -7,6 +7,7 @@ import android.util.Log;
 import java.util.ArrayList;
 
 import activities.list.first.CustomListViewActivity;
+import activities.list.first.DeserializeTrainObjectActivity;
 import activities.list.first.DragTestActivityActivity;
 import activities.list.first.DraggingViewsActivity;
 import activities.list.first.DroppingViewActivity;
@@ -63,6 +64,7 @@ public class StartUp extends Application {
         myListItems.add(new MyListItem("Test layout", TestLayoutActivity.class));
         myListItems.add(new MyListItem("example test", ExampleOneActivity.class));
         myListItems.add(new MyListItem("test text view style", TestTextViewActivity.class));
+        myListItems.add(new MyListItem("Deserialize object", DeserializeTrainObjectActivity.class));
 
     }
 

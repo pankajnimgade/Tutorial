@@ -279,6 +279,30 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="listview.test.activities.ListViewListActivity" />
         </activity>
+        <activity
+            android:name="activities.list.first.DeserializeTrainObjectActivity"
+            android:label="@string/title_activity_deserialize_train_object"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nimgade.pk.mytutorialapplication.MainActivity" />
+        </activity>
+        <activity
+            android:name="animation.list.test.AnimationListActivity"
+            android:label="@string/title_activity_animation_list"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nimgade.pk.mytutorialapplication.MainActivity" />
+        </activity>
+        <activity
+            android:name="animation.list.test.AnimationTestOneActivity"
+            android:label="@string/title_activity_animation_test_one"
+            android:parentActivityName="animation.list.test.AnimationListActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="animation.list.test.AnimationListActivity" />
+        </activity>
     </application>
 
 </manifest>
