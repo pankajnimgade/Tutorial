@@ -37,6 +37,7 @@ public class AnimationListActivity extends AppCompatActivity {
         listView = (ListView) findViewById(R.id.AnimationListActivity_listView);
         myListItems = new ArrayList<>();
         myListItems.add(new MyListItem("Animation TestOne Activity", AnimationTestOneActivity.class));
+        myListItems.add(new MyListItem("Sliding Animation Activity", SlidingAnimationActivity.class));
         ArrayAdapter<MyListItem> adapter = new ArrayAdapter<MyListItem>(getApplicationContext(), R.layout.simple_list_item_1, myListItems);
         listView.setAdapter(adapter);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {

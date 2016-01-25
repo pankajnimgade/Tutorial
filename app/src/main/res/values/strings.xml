@@ -46,4 +46,5 @@
     <string name="title_activity_deserialize_train_object">DeserializeTrainObjectActivity</string>
     <string name="title_activity_animation_list">AnimationListActivity</string>
     <string name="title_activity_animation_test_one">AnimationTestOneActivity</string>
+    <string name="title_activity_sliding_animation">SlidingAnimationActivity</string>
 </resources>

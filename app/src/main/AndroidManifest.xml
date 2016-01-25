@@ -303,6 +303,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="animation.list.test.AnimationListActivity" />
         </activity>
+        <activity
+            android:name="animation.list.test.SlidingAnimationActivity"
+            android:label="@string/title_activity_sliding_animation"
+            android:parentActivityName="animation.list.test.AnimationListActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="animation.list.test.AnimationListActivity" />
+        </activity>
     </application>
 
 </manifest>
