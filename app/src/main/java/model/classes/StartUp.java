@@ -20,6 +20,7 @@ import activities.list.first.SharedPreferencesActivity;
 import activities.list.first.TestActivity;
 import activities.list.first.TestLayoutActivity;
 import activities.list.first.TestTextViewActivity;
+import animation.list.test.AnimationListActivity;
 import custom.list.activities.CustomListActivity;
 import listview.test.activities.ListViewListActivity;
 import loaders.test.activities.LoadersListActivity;
@@ -53,6 +54,7 @@ public class StartUp extends Application {
         myListItems.add(new MyListItem("Services Test", ServicesListActivity.class));
         myListItems.add(new MyListItem("SQLite Test", SqliteListActivity.class));
         myListItems.add(new MyListItem("Custom Test", CustomListActivity.class));
+        myListItems.add(new MyListItem("Animation Test", AnimationListActivity.class));
         myListItems.add(new MyListItem("Justify Alignment", JustifyAlignmentActivity.class));
         myListItems.add(new MyListItem("RandomTestActivity", RandomTestActivity.class));
         myListItems.add(new MyListItem("Dragging Views", DraggingViewsActivity.class));
