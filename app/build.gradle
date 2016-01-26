@@ -17,6 +17,14 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    lintOptions{
+        quiet true
+
+        abortOnError false
+
+        ignoreWarnings true
+    }
 }
 
 dependencies {
@@ -30,6 +38,7 @@ dependencies {
     compile 'com.mcxiaoke.volley:library:1.0.19'
     compile 'com.squareup.okhttp:okhttp:2.0.0'
     compile 'org.apache.commons:commons-io:1.3.2'
+    compile 'com.android.support:support-annotations:23.1.1'
 }
 
 

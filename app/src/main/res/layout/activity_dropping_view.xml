@@ -34,6 +34,7 @@
                     android:id="@+id/myimage1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:contentDescription="some test image"
                     android:src="@mipmap/ic_launcher" />
             </LinearLayout>
 
