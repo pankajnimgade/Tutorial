@@ -47,4 +47,5 @@
     <string name="title_activity_animation_list">AnimationListActivity</string>
     <string name="title_activity_animation_test_one">AnimationTestOneActivity</string>
     <string name="title_activity_sliding_animation">SlidingAnimationActivity</string>
+    <string name="title_activity_parse_json">ParseJSONActivity</string>
 </resources>

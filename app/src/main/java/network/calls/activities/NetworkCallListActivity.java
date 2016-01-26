@@ -38,6 +38,7 @@ public class NetworkCallListActivity extends AppCompatActivity {
         listView = (ListView) findViewById(R.id.NetworkCallListActivity_ListView);
         myListItems_activities = new ArrayList<>();
         myListItems_activities.add(new MyListItem("Post a Request", PostRequestActivity.class));
+        myListItems_activities.add(new MyListItem("Parse JSON", ParseJSONActivity.class));
 
         ArrayAdapter<MyListItem> adapter = new ArrayAdapter<MyListItem>(getApplicationContext(), R.layout.simple_list_item_1, myListItems_activities);
         listView.setAdapter(adapter);
@@ -46,7 +47,8 @@ public class NetworkCallListActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent intent = new Intent(getApplicationContext(), PostRequestActivity.class);
+                MyListItem myListItem = (MyListItem)listView.getItemAtPosition(position);
+                Intent intent = new Intent(getApplicationContext(), myListItem.getActivity_class());
                 startActivity(intent);
             }
         });

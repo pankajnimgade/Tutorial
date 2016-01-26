@@ -311,6 +311,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="animation.list.test.AnimationListActivity" />
         </activity>
+        <activity
+            android:name="network.calls.activities.ParseJSONActivity"
+            android:label="@string/title_activity_parse_json"
+            android:parentActivityName="network.calls.activities.NetworkCallListActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="network.calls.activities.NetworkCallListActivity" />
+        </activity>
     </application>
 
 </manifest>
