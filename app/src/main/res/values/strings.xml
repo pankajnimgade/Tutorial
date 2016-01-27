@@ -48,4 +48,7 @@
     <string name="title_activity_animation_test_one">AnimationTestOneActivity</string>
     <string name="title_activity_sliding_animation">SlidingAnimationActivity</string>
     <string name="title_activity_parse_json">ParseJSONActivity</string>
+    <string name="title_activity_google_map_list">GoogleMapListActivity</string>
+    <string name="title_activity_google_map_test_one">Map</string>
+    <string name="title_activity_google_map_test_two">GoogleMapTestTwoActivity</string>
 </resources>

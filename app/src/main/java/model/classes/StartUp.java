@@ -22,6 +22,7 @@ import activities.list.first.TestLayoutActivity;
 import activities.list.first.TestTextViewActivity;
 import animation.list.test.AnimationListActivity;
 import custom.list.activities.CustomListActivity;
+import google.map.list.activities.GoogleMapListActivity;
 import listview.test.activities.ListViewListActivity;
 import loaders.test.activities.LoadersListActivity;
 import network.calls.activities.NetworkCallListActivity;
@@ -47,6 +48,7 @@ public class StartUp extends Application {
     private static void initializeList() {
         myListItems.add(new MyListItem("TestActivity", TestActivity.class));
         myListItems.add(new MyListItem("Network Call", NetworkCallListActivity.class));
+        myListItems.add(new MyListItem("Google Map", GoogleMapListActivity.class));
         myListItems.add(new MyListItem("Shared Preferences Test", SharedPreferencesActivity.class));
         myListItems.add(new MyListItem("Loader Test Test", LoadersListActivity.class));
         myListItems.add(new MyListItem("ListView Test", ListViewListActivity.class));
