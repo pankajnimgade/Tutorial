@@ -370,6 +370,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.nimgade.pk.mytutorialapplication.MainActivity" />
         </activity>
+        <activity
+            android:name="activities.list.first.DragTestTwoActivity"
+            android:label="@string/title_activity_drag_test_two"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nimgade.pk.mytutorialapplication.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import activities.list.first.CustomListViewActivity;
 import activities.list.first.DeserializeTrainObjectActivity;
 import activities.list.first.DragTestActivityActivity;
+import activities.list.first.DragTestTwoActivity;
 import activities.list.first.DraggingViewsActivity;
 import activities.list.first.DroppingViewActivity;
 import activities.list.first.ExampleOneActivity;
@@ -62,6 +63,7 @@ public class StartUp extends Application {
         myListItems.add(new MyListItem("RandomTestActivity", RandomTestActivity.class));
         myListItems.add(new MyListItem("Dragging Views", DraggingViewsActivity.class));
         myListItems.add(new MyListItem("Dropping Views", DroppingViewActivity.class));
+        myListItems.add(new MyListItem("DragTestTwoActivity", DragTestTwoActivity.class));
         myListItems.add(new MyListItem("Custom ListView", CustomListViewActivity.class));
         myListItems.add(new MyListItem("Load Data in spinner", LoadDataActivity.class));
         myListItems.add(new MyListItem("NoteListActivity", NoteListActivity.class));
