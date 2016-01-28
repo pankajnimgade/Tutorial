@@ -51,4 +51,5 @@
     <string name="title_activity_google_map_list">GoogleMapListActivity</string>
     <string name="title_activity_google_map_test_one">Map</string>
     <string name="title_activity_google_map_test_two">GoogleMapTestTwoActivity</string>
+    <string name="title_activity_test_thread">TestThreadActivity</string>
 </resources>

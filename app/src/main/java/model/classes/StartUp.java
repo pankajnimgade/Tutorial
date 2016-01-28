@@ -20,6 +20,7 @@ import activities.list.first.SharedPreferencesActivity;
 import activities.list.first.TestActivity;
 import activities.list.first.TestLayoutActivity;
 import activities.list.first.TestTextViewActivity;
+import activities.list.first.TestThreadActivity;
 import animation.list.test.AnimationListActivity;
 import custom.list.activities.CustomListActivity;
 import google.map.list.activities.GoogleMapListActivity;
@@ -69,6 +70,7 @@ public class StartUp extends Application {
         myListItems.add(new MyListItem("example test", ExampleOneActivity.class));
         myListItems.add(new MyListItem("test text view style", TestTextViewActivity.class));
         myListItems.add(new MyListItem("Deserialize object", DeserializeTrainObjectActivity.class));
+        myListItems.add(new MyListItem("TestThreadActivity", TestThreadActivity.class));
 
     }
 
