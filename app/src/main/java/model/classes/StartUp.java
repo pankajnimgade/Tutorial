@@ -25,6 +25,7 @@ import activities.list.first.TestTextViewActivity;
 import activities.list.first.TestThreadActivity;
 import animation.list.test.AnimationListActivity;
 import custom.list.activities.CustomListActivity;
+import drag.list.activities.DragListActivity;
 import google.map.list.activities.GoogleMapListActivity;
 import listview.test.activities.ListViewListActivity;
 import loaders.test.activities.LoadersListActivity;
@@ -61,6 +62,7 @@ public class StartUp extends Application {
         myListItems.add(new MyListItem("SQLite Test", SqliteListActivity.class));
         myListItems.add(new MyListItem("Custom Test", CustomListActivity.class));
         myListItems.add(new MyListItem("Miscellaneous List", MiscellaneousListActivity.class));
+        myListItems.add(new MyListItem("Drag List", DragListActivity.class));
         myListItems.add(new MyListItem("Animation Test", AnimationListActivity.class));
         myListItems.add(new MyListItem("Justify Alignment", JustifyAlignmentActivity.class));
         myListItems.add(new MyListItem("RandomTestActivity", RandomTestActivity.class));

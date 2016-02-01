@@ -59,4 +59,6 @@
     <string name="title_activity_contextual_action_mode_test_one">
         ContextualActionModeTestOneActivity
     </string>
+    <string name="title_activity_drag_list">DragListActivity</string>
+    <string name="title_activity_draging_image">DragingImageActivity</string>
 </resources>

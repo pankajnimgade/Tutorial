@@ -7,6 +7,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 import com.nimgade.pk.mytutorialapplication.R;
 
@@ -35,6 +36,15 @@ public class TestThreadActivity extends AppCompatActivity {
 
         final Listener myListener = new Listener(this);
 
+        final LinearLayout linearLayout = (LinearLayout) findViewById(R.id.TestThreadActivity_linear_layout);
+        linearLayout.post(new Runnable() {
+            @Override
+            public void run() {
+                System.out.println("Height: " + linearLayout.getHeight());
+                System.out.println("Width: " + linearLayout.getWidth());
+            }
+        });
+
         restart_Button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -50,14 +60,17 @@ public class TestThreadActivity extends AppCompatActivity {
     }
 
     public class Listener implements Runnable {
-        public Listener (Activity mainActivity) {this.mainActivity = mainActivity;}
+        public Listener(Activity mainActivity) {
+            this.mainActivity = mainActivity;
+        }
+
         private Activity mainActivity;
         private ImageView myImageView;
         int newData = 0;
 
         @Override
-        public void run(){
-            while(true){
+        public void run() {
+            while (true) {
                 // Here is where my app gets the data from the server via UDP.
                 // This always works, I am always getting the correct data.
 
@@ -69,13 +82,13 @@ public class TestThreadActivity extends AppCompatActivity {
                 }
 
                 myImageView = (ImageView) mainActivity.findViewById(R.id.TestThreadActivity_imageView);
-                mainActivity.runOnUiThread(new Runnable(){
+                mainActivity.runOnUiThread(new Runnable() {
                     @Override
-                    public void run(){
-                        System.out.println("newData: "+newData);
-                        if(newData == 1){
+                    public void run() {
+                        System.out.println("newData: " + newData);
+                        if (newData == 1) {
                             myImageView.setImageResource(R.drawable.gohan);
-                        } else if(newData == 2){
+                        } else if (newData == 2) {
                             myImageView.setImageResource(R.drawable.goku);
                         } else {
                             myImageView.setImageResource(R.drawable.piccolo);

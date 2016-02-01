@@ -410,6 +410,22 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="miscellaneous.list.activities.MiscellaneousListActivity" />
         </activity>
+        <activity
+            android:name="drag.list.activities.DragListActivity"
+            android:label="@string/title_activity_drag_list"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nimgade.pk.mytutorialapplication.MainActivity" />
+        </activity>
+        <activity
+            android:name="drag.list.activities.DraggingImageActivity"
+            android:label="@string/title_activity_draging_image"
+            android:parentActivityName="drag.list.activities.DragListActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="drag.list.activities.DragListActivity" />
+        </activity>
     </application>
 
 </manifest>
