@@ -378,6 +378,38 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.nimgade.pk.mytutorialapplication.MainActivity" />
         </activity>
+        <activity
+            android:name="activities.list.first.SimpleFramworkTestOneActivity"
+            android:label="@string/title_activity_simple_framwork_test_one"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nimgade.pk.mytutorialapplication.MainActivity" />
+        </activity>
+        <activity
+            android:name="miscellaneous.list.activities.MiscellaneousListActivity"
+            android:label="@string/title_activity_miscellaneous_list"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nimgade.pk.mytutorialapplication.MainActivity" />
+        </activity>
+        <activity
+            android:name="miscellaneous.list.activities.ContextualActionModeActivity"
+            android:label="@string/title_activity_contextual_action_mode"
+            android:parentActivityName="miscellaneous.list.activities.MiscellaneousListActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="miscellaneous.list.activities.MiscellaneousListActivity" />
+        </activity>
+        <activity
+            android:name="miscellaneous.list.activities.ContextualActionModeTestOneActivity"
+            android:label="@string/title_activity_contextual_action_mode_test_one"
+            android:parentActivityName="miscellaneous.list.activities.MiscellaneousListActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="miscellaneous.list.activities.MiscellaneousListActivity" />
+        </activity>
     </application>
 
 </manifest>

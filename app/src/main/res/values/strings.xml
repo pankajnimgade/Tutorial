@@ -53,4 +53,10 @@
     <string name="title_activity_google_map_test_two">GoogleMapTestTwoActivity</string>
     <string name="title_activity_test_thread">TestThreadActivity</string>
     <string name="title_activity_drag_test_two">DragTestTwoActivity</string>
+    <string name="title_activity_simple_framwork_test_one">SimpleFramworkTestOneActivity</string>
+    <string name="title_activity_miscellaneous_list">MiscellaneousListActivity</string>
+    <string name="title_activity_contextual_action_mode">ContextualActionModeActivity</string>
+    <string name="title_activity_contextual_action_mode_test_one">
+        ContextualActionModeTestOneActivity
+    </string>
 </resources>

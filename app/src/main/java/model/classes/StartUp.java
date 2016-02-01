@@ -18,6 +18,7 @@ import activities.list.first.LoadDataActivity;
 import activities.list.first.NoteListActivity;
 import activities.list.first.RandomTestActivity;
 import activities.list.first.SharedPreferencesActivity;
+import activities.list.first.SimpleFramworkTestOneActivity;
 import activities.list.first.TestActivity;
 import activities.list.first.TestLayoutActivity;
 import activities.list.first.TestTextViewActivity;
@@ -27,6 +28,7 @@ import custom.list.activities.CustomListActivity;
 import google.map.list.activities.GoogleMapListActivity;
 import listview.test.activities.ListViewListActivity;
 import loaders.test.activities.LoadersListActivity;
+import miscellaneous.list.activities.MiscellaneousListActivity;
 import network.calls.activities.NetworkCallListActivity;
 import services.list.activity.ServicesListActivity;
 import spinner.list.activities.SpinnerListActivity;
@@ -58,6 +60,7 @@ public class StartUp extends Application {
         myListItems.add(new MyListItem("Services Test", ServicesListActivity.class));
         myListItems.add(new MyListItem("SQLite Test", SqliteListActivity.class));
         myListItems.add(new MyListItem("Custom Test", CustomListActivity.class));
+        myListItems.add(new MyListItem("Miscellaneous List", MiscellaneousListActivity.class));
         myListItems.add(new MyListItem("Animation Test", AnimationListActivity.class));
         myListItems.add(new MyListItem("Justify Alignment", JustifyAlignmentActivity.class));
         myListItems.add(new MyListItem("RandomTestActivity", RandomTestActivity.class));
@@ -73,6 +76,7 @@ public class StartUp extends Application {
         myListItems.add(new MyListItem("test text view style", TestTextViewActivity.class));
         myListItems.add(new MyListItem("Deserialize object", DeserializeTrainObjectActivity.class));
         myListItems.add(new MyListItem("TestThreadActivity", TestThreadActivity.class));
+        myListItems.add(new MyListItem("SimpleFramworkTestOneActivity", SimpleFramworkTestOneActivity.class));
 
     }
 

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/ContextualActionModeTestOneActivity_add"
+        android:icon="@android:drawable/ic_input_add"
+        android:title="Add"
+        android:titleCondensed="Add"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/ContextualActionModeTestOneActivity_search"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="Search"
+        android:titleCondensed="Search"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/ContextualActionModeTestOneActivity_sort"
+        android:icon="@android:drawable/ic_menu_sort_by_size"
+        android:title="Sort"
+        android:titleCondensed="Sort"
+        app:showAsAction="ifRoom|withText" />
+    <item
+        android:id="@+id/ContextualActionModeTestOneActivity_help"
+        android:icon="@android:drawable/ic_menu_help"
+        android:title="Help"
+        android:titleCondensed="Help"
+        app:showAsAction="ifRoom|withText" />
+</menu>
