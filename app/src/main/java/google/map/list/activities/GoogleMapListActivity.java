@@ -37,6 +37,7 @@ public class GoogleMapListActivity extends AppCompatActivity {
         listView = (ListView) findViewById(R.id.GoogleMapListActivity_listView);
         myListItems = new ArrayList<>();
         myListItems.add(new MyListItem("GoogleMap TestOneActivity", GoogleMapTestOneActivity.class));
+        myListItems.add(new MyListItem("GoogleMap Test Two", GoogleMapTestTwoActivity.class));
 
         ArrayAdapter<MyListItem> adapter =
                 new ArrayAdapter<MyListItem>(getApplicationContext(), R.layout.simple_list_item_1, myListItems);

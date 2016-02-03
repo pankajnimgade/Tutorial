@@ -61,4 +61,6 @@
     </string>
     <string name="title_activity_drag_list">DragListActivity</string>
     <string name="title_activity_draging_image">DragingImageActivity</string>
+    <string name="title_activity_list_view_test">ListViewTestActivity</string>
+    <string name="title_activity_decrypt_image">DecryptImageActivity</string>
 </resources>

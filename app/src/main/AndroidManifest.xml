@@ -3,6 +3,7 @@
     package="com.nimgade.pk.mytutorialapplication">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
@@ -425,6 +426,22 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="drag.list.activities.DragListActivity" />
+        </activity>
+        <activity
+            android:name="listview.test.activities.ListViewTestFourActivity"
+            android:label="@string/title_activity_list_view_test"
+            android:parentActivityName="listview.test.activities.ListViewListActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="listview.test.activities.ListViewListActivity" />
+        </activity>
+        <activity
+            android:name="listview.test.activities.DecryptImageActivity"
+            android:label="@string/title_activity_decrypt_image"
+            android:parentActivityName="listview.test.activities.ListViewListActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="listview.test.activities.ListViewListActivity" />
         </activity>
     </application>
 

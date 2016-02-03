@@ -38,6 +38,8 @@ public class ListViewListActivity extends AppCompatActivity {
         list_MyListItems.add(new MyListItem("ListView-Test-One", ListViewTestOneActivity.class));
         list_MyListItems.add(new MyListItem("ListView-Test-Two", CustomListViewActivity.class));
         list_MyListItems.add(new MyListItem("ListView-Test-Three", ListVewTestThreeActivity.class));
+        list_MyListItems.add(new MyListItem("ListView-Test-Four", ListViewTestFourActivity.class));
+        list_MyListItems.add(new MyListItem("DecryptImageActivity", DecryptImageActivity.class));
         ArrayAdapter<MyListItem> adapter =
                 new ArrayAdapter<MyListItem>(getApplicationContext(), R.layout.simple_list_item_1, list_MyListItems);
         listView.setAdapter(adapter);
