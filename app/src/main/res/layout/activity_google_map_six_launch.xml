@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="google.map.list.activities.GoogleMapSixLaunchActivity">
+
+    <include layout="@layout/my_custom_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/GoogleMapSixLaunchActivity_launch_google_map_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="Launch Google Map"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/GoogleMapSixLaunchActivity_san_francisco_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="San Francisco"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/GoogleMapSixLaunchActivity_san_francisco_restaurant_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="San Francisco"
+            android:textAllCaps="false" />
+    </LinearLayout>
+</LinearLayout>

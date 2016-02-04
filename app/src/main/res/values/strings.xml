@@ -64,4 +64,10 @@
     <string name="title_activity_list_view_test">ListViewTestActivity</string>
     <string name="title_activity_decrypt_image">DecryptImageActivity</string>
     <string name="title_activity_google_map_test_three">GoogleMapTestThreeActivity</string>
+    <string name="title_activity_google_map_four_lite_mode">GoogleMapFourLiteModeActivity</string>
+    <string name="title_activity_google_map_five_street_view">GoogleMapFiveStreetViewActivity
+    </string>
+    <string name="title_activity_google_map_six_launch">GoogleMapSixLaunchActivity</string>
+    <string name="title_activity_google_map_seven_camera">GoogleMapSevenCameraActivity</string>
+    <string name="title_activity_list_view_test_fice">ListViewTestFiceActivity</string>
 </resources>

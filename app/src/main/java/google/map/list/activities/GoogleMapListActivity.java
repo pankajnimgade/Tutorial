@@ -39,6 +39,10 @@ public class GoogleMapListActivity extends AppCompatActivity {
         myListItems.add(new MyListItem("GoogleMap TestOneActivity", GoogleMapTestOneActivity.class));
         myListItems.add(new MyListItem("GoogleMap Test Two", GoogleMapTestTwoActivity.class));
         myListItems.add(new MyListItem("GoogleMap Test Three", GoogleMapTestThreeActivity.class));
+        myListItems.add(new MyListItem("GoogleMap Test Four Lite Mode", GoogleMapFourLiteModeActivity.class));
+        myListItems.add(new MyListItem("GoogleMap Test Five Street View", GoogleMapFiveStreetViewActivity.class));
+        myListItems.add(new MyListItem("GoogleMap Test Six launch google map", GoogleMapSixLaunchActivity.class));
+        myListItems.add(new MyListItem("GoogleMap Test Seven Camera", GoogleMapSevenCameraActivity.class));
 
         ArrayAdapter<MyListItem> adapter =
                 new ArrayAdapter<MyListItem>(getApplicationContext(), R.layout.simple_list_item_1, myListItems);

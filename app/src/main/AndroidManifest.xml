@@ -452,6 +452,46 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="google.map.list.activities.GoogleMapListActivity" />
         </activity>
+        <activity
+            android:name="google.map.list.activities.GoogleMapFourLiteModeActivity"
+            android:label="@string/title_activity_google_map_four_lite_mode"
+            android:parentActivityName="google.map.list.activities.GoogleMapListActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="google.map.list.activities.GoogleMapListActivity" />
+        </activity>
+        <activity
+            android:name="google.map.list.activities.GoogleMapFiveStreetViewActivity"
+            android:label="@string/title_activity_google_map_five_street_view"
+            android:parentActivityName="google.map.list.activities.GoogleMapListActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="google.map.list.activities.GoogleMapListActivity" />
+        </activity>
+        <activity
+            android:name="google.map.list.activities.GoogleMapSixLaunchActivity"
+            android:label="@string/title_activity_google_map_six_launch"
+            android:parentActivityName="google.map.list.activities.GoogleMapListActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="google.map.list.activities.GoogleMapListActivity" />
+        </activity>
+        <activity
+            android:name="google.map.list.activities.GoogleMapSevenCameraActivity"
+            android:label="@string/title_activity_google_map_seven_camera"
+            android:parentActivityName="google.map.list.activities.GoogleMapListActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="google.map.list.activities.GoogleMapListActivity" />
+        </activity>
+        <activity
+            android:name="listview.test.activities.ListViewTestFiveActivity"
+            android:label="@string/title_activity_list_view_test_fice"
+            android:parentActivityName="listview.test.activities.ListViewListActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="listview.test.activities.ListViewListActivity" />
+        </activity>
     </application>
 
 </manifest>
