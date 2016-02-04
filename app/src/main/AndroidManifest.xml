@@ -492,6 +492,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="listview.test.activities.ListViewListActivity" />
         </activity>
+        <activity
+            android:name="miscellaneous.list.activities.ImageViewDynamicallyActivity"
+            android:label="@string/title_activity_image_view_dynamically"
+            android:parentActivityName="miscellaneous.list.activities.MiscellaneousListActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="miscellaneous.list.activities.MiscellaneousListActivity" />
+        </activity>
     </application>
 
 </manifest>
