@@ -67,7 +67,36 @@ public class DecryptImageActivity extends AppCompatActivity {
     public File getAlbumStorageDir() {
         // Get the directory for the user's public pictures directory.
         File file = new File(""+Environment.getExternalStorageDirectory());
-        System.out.println(""+file.getAbsolutePath());
+        System.out.println("The path is \n"+file.getAbsolutePath());
+        File new_File1 = new File(""+Environment.getExternalStorageDirectory()+"/Pictures");
+
+        if (new_File1 != null) {
+            if (new_File1.isDirectory()) {
+
+                System.out.println("new_File1 is Directory\n"+new_File1.getAbsolutePath());
+                File[] files = new_File1.listFiles();
+
+                for (File single :files) {
+                    System.out.println(""+single.getAbsolutePath());
+                }
+
+                GizMorphProcess gizMorphProcess =
+                        new GizMorphProcess(new_File1.getAbsolutePath()+"/bg_001.jpg",
+                                new_File1.getAbsolutePath()+"/decrypted_bg_001.jpg",
+                                new_File1.getAbsolutePath(),
+                                1920,1080);
+                Bitmap bitmap = gizMorphProcess.doReshakeWithThread();
+
+
+
+
+            }else{
+
+                System.out.println("new_File1 is not Directory");
+            }
+        }else{
+            System.out.println("new_File1 is null");
+        }
 
         return file;
     }

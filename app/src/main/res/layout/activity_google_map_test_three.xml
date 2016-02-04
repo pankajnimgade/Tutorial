@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="google.map.list.activities.GoogleMapTestTwoActivity">
+    tools:context="google.map.list.activities.GoogleMapTestThreeActivity">
 
     <include layout="@layout/my_custom_toolbar" />
 
@@ -14,11 +14,12 @@
         android:layout_margin="4dp"
         android:orientation="vertical">
 
-        <FrameLayout
-            android:id="@+id/GoogleMapTestTwoActivity_frame_layout_container"
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/GoogleMapTestThreeActivity_mapView"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"></FrameLayout>
-    </LinearLayout>
+            android:layout_height="match_parent">
 
+        </com.google.android.gms.maps.MapView>
+    </LinearLayout>
 
 </LinearLayout>
