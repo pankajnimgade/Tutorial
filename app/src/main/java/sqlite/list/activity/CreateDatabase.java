@@ -34,4 +34,6 @@ public class CreateDatabase extends SQLiteOpenHelper implements BaseColumns {
             " (" + BaseColumns._ID + " INTEGER PRIMARY KEY," +
             "first_column_name" + TEXT_TYPE + COMMA_SEP +
             "second_column_name" + TEXT_TYPE + ")";
+
+
 }

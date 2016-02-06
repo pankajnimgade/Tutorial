@@ -1,0 +1,9 @@
+<scenario name="test responses">
+    <cmd name="query1">
+        <return>success_200.xml</return>
+        <return>error_500.xml</return>
+    </cmd>
+    <cmd name="query2">
+        <return>success_200.xml</return>
+    </cmd>
+</scenario>

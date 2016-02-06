@@ -71,4 +71,6 @@
     <string name="title_activity_google_map_seven_camera">GoogleMapSevenCameraActivity</string>
     <string name="title_activity_list_view_test_fice">ListViewTestFiceActivity</string>
     <string name="title_activity_image_view_dynamically">ImageViewDynamicallyActivity</string>
+    <string name="title_activity_google_map_eight_my_location">GoogleMapEightMyLocationActivity
+    </string>
 </resources>

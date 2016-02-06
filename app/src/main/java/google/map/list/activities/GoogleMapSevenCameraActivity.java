@@ -14,7 +14,9 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapFragment;
 import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.LatLngBounds;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.nimgade.pk.mytutorialapplication.R;
 
@@ -87,15 +89,51 @@ public class GoogleMapSevenCameraActivity extends AppCompatActivity implements O
         if (mMap != null) {
             switch (v.getId()) {
                 case R.id.GoogleMapSevenCameraActivity_source_button:
+                    // lat=43.65774661382077    long=-79.37814820557833
 
                     break;
                 case R.id.GoogleMapSevenCameraActivity_destination_button:
-
+                    // lat=    long=
+                    animate();
                     break;
                 case R.id.GoogleMapSevenCameraActivity_get_lat_long_button:
+// Create a LatLngBounds that includes Australia.
+                    LatLngBounds AUSTRALIA = new LatLngBounds(
+                            new LatLng(-44, 113), new LatLng(-10, 154));
+
+// Set the camera to the greatest possible zoom level that includes the
+// bounds
+                    mMap.moveCamera(CameraUpdateFactory.newLatLngBounds(AUSTRALIA, 0));
 
                     break;
             }
         }
+    }
+
+    private void animate(){
+        LatLng SYDNEY = new LatLng(-33.88,151.21);
+         LatLng MOUNTAIN_VIEW = new LatLng(37.4, -122.1);
+
+//        private GoogleMap map;
+        // Obtain the map from a MapFragment or MapView.
+
+// Move the camera instantly to Sydney with a zoom of 15.
+//        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(SYDNEY, 15));
+
+// Zoom in, animating the camera.
+        mMap.animateCamera(CameraUpdateFactory.zoomIn());
+
+// Zoom out to zoom level 10, animating with a duration of 2 seconds.
+        mMap.animateCamera(CameraUpdateFactory.zoomTo(10), 4000, null);
+
+// Construct a CameraPosition focusing on Mountain View and animate the camera to that position.
+        CameraPosition cameraPosition = new CameraPosition.Builder()
+                .target(MOUNTAIN_VIEW)      // Sets the center of the map to Mountain View
+                .zoom(18)                   // Sets the zoom
+                .bearing(180)                // Sets the orientation of the camera to east
+                .tilt(45)                   // Sets the tilt of the camera to 30 degrees
+                .build();                   // Creates a CameraPosition from the builder
+        mMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
+
     }
 }

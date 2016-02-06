@@ -25,16 +25,16 @@ public class ImageViewDynamicallyActivity extends AppCompatActivity {
     }
 
     private void initializeUI() {
-        LinearLayout linearLayout = (LinearLayout) findViewById(R.id.ImageViewDynamicallyActivity_linear_layout);
+    LinearLayout linearLayout = (LinearLayout) findViewById(R.id.ImageViewDynamicallyActivity_linear_layout);
 
-        ImageView imageView = new ImageView(this);
+    ImageView imageView = new ImageView(this);
 
-        LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
-        imageView.setLayoutParams(layoutParams);
+    LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+    imageView.setLayoutParams(layoutParams);
 
-        linearLayout.addView(imageView);
+    linearLayout.addView(imageView);
 
-        Picasso.with(getApplicationContext()).load("http://image.3bmeteo.com/images/newarticles/w_663/immagine-nasa-visible-infrared-imaging-radiometer-suite-viirs-3bmeteo-66721.jpg").into(imageView);
+    Picasso.with(getApplicationContext()).load("http://image.3bmeteo.com/images/newarticles/w_663/immagine-nasa-visible-infrared-imaging-radiometer-suite-viirs-3bmeteo-66721.jpg").into(imageView);
 
     }
 
