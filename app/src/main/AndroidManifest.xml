@@ -508,6 +508,22 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="google.map.list.activities.GoogleMapListActivity" />
         </activity>
+        <activity
+            android:name="google.map.list.activities.GoogleMapNineMarkersActivity"
+            android:label="@string/title_activity_google_map_nine_markers"
+            android:parentActivityName="google.map.list.activities.GoogleMapListActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="google.map.list.activities.GoogleMapListActivity" />
+        </activity>
+        <activity
+            android:name="google.map.list.activities.GoogleMapTenMarkersActivity"
+            android:label="@string/title_activity_google_map_ten_markers"
+            android:parentActivityName="google.map.list.activities.GoogleMapListActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="google.map.list.activities.GoogleMapListActivity" />
+        </activity>
     </application>
 
 </manifest>

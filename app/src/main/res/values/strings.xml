@@ -73,4 +73,6 @@
     <string name="title_activity_image_view_dynamically">ImageViewDynamicallyActivity</string>
     <string name="title_activity_google_map_eight_my_location">GoogleMapEightMyLocationActivity
     </string>
+    <string name="title_activity_google_map_nine_markers">GoogleMapNineMarkersActivity</string>
+    <string name="title_activity_google_map_ten_markers">GoogleMapTenMarkersActivity</string>
 </resources>
