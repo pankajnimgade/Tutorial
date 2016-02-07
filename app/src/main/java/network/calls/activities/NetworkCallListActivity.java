@@ -39,6 +39,7 @@ public class NetworkCallListActivity extends AppCompatActivity {
         myListItems_activities = new ArrayList<>();
         myListItems_activities.add(new MyListItem("Post a Request", PostRequestActivity.class));
         myListItems_activities.add(new MyListItem("Parse JSON", ParseJSONActivity.class));
+        myListItems_activities.add(new MyListItem("Parse JSON - Test One", ParseJsonTestOneActivity.class));
 
         ArrayAdapter<MyListItem> adapter = new ArrayAdapter<MyListItem>(getApplicationContext(), R.layout.simple_list_item_1, myListItems_activities);
         listView.setAdapter(adapter);

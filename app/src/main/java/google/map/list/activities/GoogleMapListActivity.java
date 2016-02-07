@@ -34,6 +34,8 @@ public class GoogleMapListActivity extends AppCompatActivity {
 
     private void initializeUI() {
 
+        // do not be dismayed by the reviews or comments people might make, it takes guts and a lot a courage to speak up in while eveyone is watching
+
         listView = (ListView) findViewById(R.id.GoogleMapListActivity_listView);
         myListItems = new ArrayList<>();
         myListItems.add(new MyListItem("GoogleMap TestOneActivity", GoogleMapTestOneActivity.class));

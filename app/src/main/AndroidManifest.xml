@@ -524,6 +524,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="google.map.list.activities.GoogleMapListActivity" />
         </activity>
+        <activity
+            android:name="network.calls.activities.ParseJsonTestOneActivity"
+            android:label="@string/title_activity_parse_json_test_one"
+            android:parentActivityName="network.calls.activities.NetworkCallListActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="network.calls.activities.NetworkCallListActivity" />
+        </activity>
     </application>
 
 </manifest>
