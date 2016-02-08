@@ -532,6 +532,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="network.calls.activities.NetworkCallListActivity" />
         </activity>
+        <activity
+            android:name="google.map.list.activities.GoogleMapInfoWindowActivity"
+            android:label="@string/title_activity_google_map_info_window"
+            android:parentActivityName="google.map.list.activities.GoogleMapListActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="google.map.list.activities.GoogleMapListActivity" />
+        </activity>
     </application>
 
 </manifest>

@@ -76,4 +76,5 @@
     <string name="title_activity_google_map_nine_markers">GoogleMapNineMarkersActivity</string>
     <string name="title_activity_google_map_ten_markers">GoogleMapTenMarkersActivity</string>
     <string name="title_activity_parse_json_test_one">ParseJsonTestOneActivity</string>
+    <string name="title_activity_google_map_info_window">GoogleMapInfoWindowActivity</string>
 </resources>
