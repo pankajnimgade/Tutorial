@@ -540,6 +540,15 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="google.map.list.activities.GoogleMapListActivity" />
         </activity>
+        <activity
+            android:name="miscellaneous.list.activities.TestPercentOneActivity"
+            android:label="@string/title_activity_test_percent_one"
+            android:theme="@style/MyDialog_AppTheme"
+            android:parentActivityName="miscellaneous.list.activities.MiscellaneousListActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="miscellaneous.list.activities.MiscellaneousListActivity" />
+        </activity>
     </application>
 
 </manifest>

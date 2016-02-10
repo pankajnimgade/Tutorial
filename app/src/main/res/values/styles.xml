@@ -57,4 +57,12 @@
     </style>
 
 
+    <style name="MyDialog_AppTheme" parent="Theme.AppCompat.Dialog">
+        <!-- Customize your theme here. -->
+        <item name="android:background">#ffffff</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+
+    </style>
+
+
 </resources>

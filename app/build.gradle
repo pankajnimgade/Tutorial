@@ -49,7 +49,7 @@ dependencies {
     compile 'com.google.android.gms:play-services-auth:8.4.0'
     compile 'com.google.android.gms:play-services-gcm:8.4.0'
     compile 'com.android.support:multidex:1.0.0'
-
+    compile 'com.android.support:percent:23.1.0'
 }
 
 
