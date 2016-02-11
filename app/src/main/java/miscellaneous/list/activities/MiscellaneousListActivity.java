@@ -39,6 +39,7 @@ public class MiscellaneousListActivity extends AppCompatActivity {
         myListItems.add(new MyListItem("Contextual Action Mode Test One", ContextualActionModeTestOneActivity.class));
         myListItems.add(new MyListItem("Create ImageView dynamically", ImageViewDynamicallyActivity.class));
         myListItems.add(new MyListItem("Test Percent One", TestPercentOneActivity.class));
+        myListItems.add(new MyListItem("Test Percent Two", PercentTwoActivity.class));
         ArrayAdapter<MyListItem> adapter =
                 new ArrayAdapter<MyListItem>(getApplicationContext(), R.layout.simple_list_item_1, myListItems);
         listView.setAdapter(adapter);

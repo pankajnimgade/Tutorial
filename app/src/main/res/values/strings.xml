@@ -78,4 +78,5 @@
     <string name="title_activity_parse_json_test_one">ParseJsonTestOneActivity</string>
     <string name="title_activity_google_map_info_window">GoogleMapInfoWindowActivity</string>
     <string name="title_activity_test_percent_one">TestPercentOneActivity</string>
+    <string name="title_activity_percent_two">PercentTwoActivity</string>
 </resources>
