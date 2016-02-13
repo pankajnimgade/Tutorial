@@ -1,4 +1,4 @@
-package miscellaneous.list.activities;
+package viewpager.list.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -15,15 +15,16 @@ import java.util.ArrayList;
 
 import model.classes.MyListItem;
 
-public class MiscellaneousListActivity extends AppCompatActivity {
+public class ViewPagerListActivity extends AppCompatActivity {
 
-    private ArrayList<MyListItem> myListItems;
     private ListView listView;
+    private ArrayList<MyListItem> myListItems;
+    private ArrayAdapter<MyListItem> adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_miscellaneous_list);
+        setContentView(R.layout.activity_view_pager_list);
         Toolbar toolbar = (Toolbar) findViewById(R.id.my_custom_toolbar);
         setSupportActionBar(toolbar);
 
@@ -33,18 +34,12 @@ public class MiscellaneousListActivity extends AppCompatActivity {
     }
 
     private void initializeUI() {
-        listView = (ListView) findViewById(R.id.MiscellaneousListActivity_listView);
+        listView = (ListView) findViewById(R.id.ViewPagerListActivity_listView);
         myListItems = new ArrayList<>();
-        myListItems.add(new MyListItem("Contextual Action Mode", ContextualActionModeActivity.class));
-        myListItems.add(new MyListItem("Contextual Action Mode Test One", ContextualActionModeTestOneActivity.class));
-        myListItems.add(new MyListItem("Create ImageView dynamically", ImageViewDynamicallyActivity.class));
-        myListItems.add(new MyListItem("Test Percent One", TestPercentOneActivity.class));
-        myListItems.add(new MyListItem("Test Percent Two", PercentTwoActivity.class));
-        myListItems.add(new MyListItem("Show Image Activity", ShowImageActivity.class));
-        myListItems.add(new MyListItem("Show Image Two Activity", ShowImageTwoActivity.class));
-        ArrayAdapter<MyListItem> adapter =
-                new ArrayAdapter<MyListItem>(getApplicationContext(), R.layout.simple_list_item_1, myListItems);
+        myListItems.add(new MyListItem("ViewPager Test OneActivity", ViewPagerTestOneActivity.class));
+        adapter = new ArrayAdapter<MyListItem>(getApplicationContext(), R.layout.simple_list_item_1, myListItems);
         listView.setAdapter(adapter);
+
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {

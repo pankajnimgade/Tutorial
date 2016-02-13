@@ -138,22 +138,22 @@ public class ParseJSONActivity extends AppCompatActivity {
                 String result = IOUtils.toString(httpURLConnection.getInputStream());
                 System.out.println("" + result);
                 if (result != null) {
-                    JSONObject result_jsonObject = new JSONObject(result);
-                    JSONArray result_JsonArray = result_jsonObject.getJSONArray("result");
-                    if (result_JsonArray != null) {
-                        if (result_JsonArray.length() > 0) {
-                            peoples = new ArrayList<>();
-                            for (int i = 0; i < result_JsonArray.length(); i++) {
-                                People people = new People();
-                                JSONObject jsonObject = result_JsonArray.getJSONObject(i);
-                                people.setId("" + jsonObject.getString("id"));
-                                people.setName("" + jsonObject.getString("Name"));
-                                people.setProfession("" + jsonObject.getString("profession"));
-                                people.setImage("" + jsonObject.getString("image"));
-                                peoples.add(people);
-                            }
-                        }
-                    }
+        JSONObject result_jsonObject = new JSONObject(result);
+        JSONArray result_JsonArray = result_jsonObject.getJSONArray("result");
+        if (result_JsonArray != null) {
+            if (result_JsonArray.length() > 0) {
+                peoples = new ArrayList<>();
+                for (int i = 0; i < result_JsonArray.length(); i++) {
+                    People people = new People();
+                    JSONObject jsonObject = result_JsonArray.getJSONObject(i);
+                    people.setId("" + jsonObject.getString("id"));
+                    people.setName("" + jsonObject.getString("Name"));
+                    people.setProfession("" + jsonObject.getString("profession"));
+                    people.setImage("" + jsonObject.getString("image"));
+                    peoples.add(people);
+                }
+            }
+        }
                 }
 
             } catch (Exception e) {

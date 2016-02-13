@@ -35,6 +35,7 @@ import services.list.activity.ServicesListActivity;
 import spinner.list.activities.SpinnerListActivity;
 import sqlite.list.activity.CreateDatabase;
 import sqlite.list.activity.SqliteListActivity;
+import viewpager.list.activities.ViewPagerListActivity;
 
 /**
  * Created by Pankaj Nimgade on 04-01-2016.
@@ -61,6 +62,7 @@ public class StartUp extends Application {
         myListItems.add(new MyListItem("Services Test", ServicesListActivity.class));
         myListItems.add(new MyListItem("SQLite Test", SqliteListActivity.class));
         myListItems.add(new MyListItem("Custom Test", CustomListActivity.class));
+        myListItems.add(new MyListItem("ViewPager List", ViewPagerListActivity.class));
         myListItems.add(new MyListItem("Miscellaneous List", MiscellaneousListActivity.class));
         myListItems.add(new MyListItem("Drag List", DragListActivity.class));
         myListItems.add(new MyListItem("Animation Test", AnimationListActivity.class));
