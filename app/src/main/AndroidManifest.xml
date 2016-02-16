@@ -590,6 +590,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="viewpager.list.activities.ViewPagerListActivity" />
         </activity>
+        <activity
+            android:name="listview.test.activities.ListViewTestSevenActivity"
+            android:label="@string/title_activity_listview_test_seven"
+            android:parentActivityName="listview.test.activities.ListViewListActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="listview.test.activities.ListViewListActivity" />
+        </activity>
     </application>
 
 </manifest>

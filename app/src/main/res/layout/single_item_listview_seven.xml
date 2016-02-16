@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal"
+    tools:context="listview.test.activities.ListViewTestSevenActivity">
+
+
+    <Button
+        android:id="@+id/ListViewTestSevenActivity_text_button"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:text="A"
+        android:textAllCaps="true" />
+</LinearLayout>

@@ -91,6 +91,7 @@ public class ListViewTestFiveActivity extends AppCompatActivity{
                     int decrease_count =item.getCount();
                     item.setCount(--decrease_count );
                     notifyDataSetChanged();
+
                 }
             });
             return row;
