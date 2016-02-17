@@ -42,6 +42,7 @@ public class MiscellaneousListActivity extends AppCompatActivity {
         myListItems.add(new MyListItem("Test Percent Two", PercentTwoActivity.class));
         myListItems.add(new MyListItem("Show Image Activity", ShowImageActivity.class));
         myListItems.add(new MyListItem("Show Image Two Activity", ShowImageTwoActivity.class));
+        myListItems.add(new MyListItem("Read the Text from asset Activity", ReadFromAssetActivity.class));
         ArrayAdapter<MyListItem> adapter =
                 new ArrayAdapter<MyListItem>(getApplicationContext(), R.layout.simple_list_item_1, myListItems);
         listView.setAdapter(adapter);
