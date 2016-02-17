@@ -598,6 +598,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="listview.test.activities.ListViewListActivity" />
         </activity>
+        <activity
+            android:name="miscellaneous.list.activities.ReadFromAssetActivity"
+            android:label="@string/title_activity_read_from_asset"
+            android:parentActivityName="miscellaneous.list.activities.MiscellaneousListActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="miscellaneous.list.activities.MiscellaneousListActivity" />
+        </activity>
     </application>
 
 </manifest>
