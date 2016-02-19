@@ -88,4 +88,5 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_listview_test_seven">ListviewTestSevenActivity</string>
     <string name="title_activity_read_from_asset">ReadFromAssetActivity</string>
+    <string name="title_activity_google_map_eleven">GoogleMapElevenActivity</string>
 </resources>

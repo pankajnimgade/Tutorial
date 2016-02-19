@@ -32,7 +32,12 @@ public class GoogleMapFourLiteModeActivity extends AppCompatActivity implements 
     private void initializeUI() {
         MapFragment mapFragment =
                 (MapFragment)getFragmentManager().findFragmentById(R.id.GoogleMapFourLiteModeActivity_map);
-        mapFragment.getMapAsync(this);
+        mapFragment.getMapAsync(new OnMapReadyCallback() {
+            @Override
+            public void onMapReady(GoogleMap googleMap) {
+
+            }
+        });
     }
 
     @Override

@@ -606,6 +606,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="miscellaneous.list.activities.MiscellaneousListActivity" />
         </activity>
+        <activity
+            android:name="google.map.list.activities.GoogleMapElevenActivity"
+            android:label="@string/title_activity_google_map_eleven"
+            android:parentActivityName="google.map.list.activities.GoogleMapListActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="google.map.list.activities.GoogleMapListActivity" />
+        </activity>
     </application>
 
 </manifest>
