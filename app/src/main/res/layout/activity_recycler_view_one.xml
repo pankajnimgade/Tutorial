@@ -4,21 +4,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="recyclerview.list.activities.RecyclerViewListActivity">
+    tools:context="recyclerview.list.activities.RecyclerViewOneActivity">
 
     <include layout="@layout/my_custom_toolbar" />
-
-    <ListView
-        android:id="@+id/RecyclerViewListActivity_listView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="4dp">
+        android:layout_margin="4dp"
+        android:orientation="vertical">
 
-
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/RecyclerViewOneActivity_RecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
     </LinearLayout>
-
 </LinearLayout>

@@ -591,14 +591,6 @@
                 android:value="viewpager.list.activities.ViewPagerListActivity" />
         </activity>
         <activity
-            android:name="listview.test.activities.ListViewTestSevenActivity"
-            android:label="@string/title_activity_listview_test_seven"
-            android:parentActivityName="listview.test.activities.ListViewListActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="listview.test.activities.ListViewListActivity" />
-        </activity>
-        <activity
             android:name="miscellaneous.list.activities.ReadFromAssetActivity"
             android:label="@string/title_activity_read_from_asset"
             android:parentActivityName="miscellaneous.list.activities.MiscellaneousListActivity">
@@ -629,6 +621,14 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.nimgade.pk.mytutorialapplication.MainActivity" />
+        </activity>
+        <activity
+            android:name="recyclerview.list.activities.RecyclerViewOneActivity"
+            android:label="@string/title_activity_recycler_view_one"
+            android:parentActivityName="recyclerview.list.activities.RecyclerViewListActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="recyclerview.list.activities.RecyclerViewListActivity" />
         </activity>
     </application>
 

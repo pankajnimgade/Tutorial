@@ -91,4 +91,5 @@
     <string name="title_activity_google_map_eleven">GoogleMapElevenActivity</string>
     <string name="title_activity_oval_shape">OvalShapeActivity</string>
     <string name="title_activity_recycler_view_list">RecyclerViewListActivity</string>
+    <string name="title_activity_recycler_view_one">RecyclerViewOneActivity</string>
 </resources>

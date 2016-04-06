@@ -31,6 +31,7 @@ import listview.test.activities.ListViewListActivity;
 import loaders.test.activities.LoadersListActivity;
 import miscellaneous.list.activities.MiscellaneousListActivity;
 import network.calls.activities.NetworkCallListActivity;
+import recyclerview.list.activities.RecyclerViewListActivity;
 import services.list.activity.ServicesListActivity;
 import spinner.list.activities.SpinnerListActivity;
 import sqlite.list.activity.CreateDatabase;
@@ -58,6 +59,7 @@ public class StartUp extends Application {
         myListItems.add(new MyListItem("Shared Preferences Test", SharedPreferencesActivity.class));
         myListItems.add(new MyListItem("Loader Test Test", LoadersListActivity.class));
         myListItems.add(new MyListItem("ListView Test", ListViewListActivity.class));
+        myListItems.add(new MyListItem("RecyclerView Test", RecyclerViewListActivity.class));
         myListItems.add(new MyListItem("Spinner Test", SpinnerListActivity.class));
         myListItems.add(new MyListItem("Services Test", ServicesListActivity.class));
         myListItems.add(new MyListItem("SQLite Test", SqliteListActivity.class));
