@@ -89,4 +89,6 @@
     <string name="title_activity_listview_test_seven">ListviewTestSevenActivity</string>
     <string name="title_activity_read_from_asset">ReadFromAssetActivity</string>
     <string name="title_activity_google_map_eleven">GoogleMapElevenActivity</string>
+    <string name="title_activity_oval_shape">OvalShapeActivity</string>
+    <string name="title_activity_recycler_view_list">RecyclerViewListActivity</string>
 </resources>
