@@ -72,6 +72,7 @@ public class RecyclerViewOneActivity extends AppCompatActivity {
         public void onBindViewHolder(MyViewHolder holder, int position) {
             final String text = this.strings.get(position);
             holder.textView.setText("" + text);
+
             holder.linearLayout.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {

@@ -630,6 +630,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="recyclerview.list.activities.RecyclerViewListActivity" />
         </activity>
+        <activity
+            android:name="spinner.list.activities.SpinnerCountryActivity"
+            android:label="@string/title_activity_spinner_country"
+            android:parentActivityName="spinner.list.activities.SpinnerListActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="spinner.list.activities.SpinnerListActivity" />
+        </activity>
     </application>
 
 </manifest>

@@ -92,4 +92,5 @@
     <string name="title_activity_oval_shape">OvalShapeActivity</string>
     <string name="title_activity_recycler_view_list">RecyclerViewListActivity</string>
     <string name="title_activity_recycler_view_one">RecyclerViewOneActivity</string>
+    <string name="title_activity_spinner_country">SpinnerCountryActivity</string>
 </resources>

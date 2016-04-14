@@ -40,6 +40,7 @@ public class SpinnerListActivity extends AppCompatActivity {
         myListItems = new ArrayList<>();
         myListItems.add(new MyListItem("Sinner test One", SpinnerTestOneActivity.class));
         myListItems.add(new MyListItem("Sinner test Two", SpinnerTestTwoActivity.class));
+        myListItems.add(new MyListItem("Sinner test Country", SpinnerCountryActivity.class));
 
         ArrayAdapter<MyListItem> adapter =
                 new ArrayAdapter<MyListItem>(getApplicationContext(), R.layout.simple_list_item_1, myListItems);
@@ -55,5 +56,6 @@ public class SpinnerListActivity extends AppCompatActivity {
         });
 
     }
+
 
 }
