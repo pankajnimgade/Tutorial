@@ -93,4 +93,5 @@
     <string name="title_activity_recycler_view_list">RecyclerViewListActivity</string>
     <string name="title_activity_recycler_view_one">RecyclerViewOneActivity</string>
     <string name="title_activity_spinner_country">SpinnerCountryActivity</string>
+    <string name="title_activity_spinner_load_from_network">SpinnerLoadFromNetworkActivity</string>
 </resources>

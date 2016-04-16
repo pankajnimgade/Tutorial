@@ -638,6 +638,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="spinner.list.activities.SpinnerListActivity" />
         </activity>
+        <activity
+            android:name="spinner.list.activities.SpinnerLoadFromNetworkActivity"
+            android:label="@string/title_activity_spinner_load_from_network"
+            android:parentActivityName="spinner.list.activities.SpinnerListActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="spinner.list.activities.SpinnerListActivity" />
+        </activity>
     </application>
 
 </manifest>
