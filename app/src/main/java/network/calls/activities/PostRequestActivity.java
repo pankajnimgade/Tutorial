@@ -11,14 +11,24 @@ import android.widget.Button;
 
 import com.google.gson.JsonObject;
 import com.nimgade.pk.mytutorialapplication.R;
+import com.squareup.okhttp.Callback;
+import com.squareup.okhttp.MediaType;
+import com.squareup.okhttp.OkHttpClient;
+import com.squareup.okhttp.Request;
+import com.squareup.okhttp.RequestBody;
+import com.squareup.okhttp.Response;
 
 import org.apache.commons.io.IOUtils;
 
 import java.io.DataOutputStream;
+import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
 public class PostRequestActivity extends AppCompatActivity {
+
+    private static final String TAG = "PostRequest";
+
 
     private Button post_Button;
     private ProgressDialog progressDialog;
@@ -91,5 +101,75 @@ public class PostRequestActivity extends AppCompatActivity {
             return null;
         }
     }
+
+    private void get(){
+        OkHttpClient okHttpClient = new OkHttpClient();
+        String url_String = "API url";
+        Request request = new Request.Builder()
+                .url(url_String)
+                .get()
+                .build();
+        okHttpClient.newCall(request).enqueue(new Callback() {
+            @Override
+            public void onFailure(Request request, IOException e) {
+                Log.d(TAG, "onFailure: ");
+            }
+
+            @Override
+            public void onResponse(Response response) throws IOException {
+                String response_String = response.body().string();
+                Log.d(TAG, "onResponse: \n"+response_String);
+            }
+        });
+    }
+
+    private void put(){
+        OkHttpClient okHttpClient = new OkHttpClient();
+        String url_String = "API url";
+        MediaType JSON
+                = MediaType.parse("application/json; charset=utf-8");
+        RequestBody body = RequestBody.create(JSON, "JSON body to be PUT");
+        Request request = new Request.Builder()
+                .url(url_String)
+                .put(body)
+                .build();
+        okHttpClient.newCall(request).enqueue(new Callback() {
+            @Override
+            public void onFailure(Request request, IOException e) {
+                Log.d(TAG, "onFailure: ");
+            }
+
+            @Override
+            public void onResponse(Response response) throws IOException {
+                String response_String = response.body().string();
+                Log.d(TAG, "onResponse: \n"+response_String);
+            }
+        });
+    }
+
+    private void post(){
+        OkHttpClient okHttpClient = new OkHttpClient();
+        String url_String = "API url";
+        MediaType JSON
+                = MediaType.parse("application/json; charset=utf-8");
+        RequestBody body = RequestBody.create(JSON, "JSON body to be POST");
+        Request request = new Request.Builder()
+                .url(url_String)
+                .post(body)
+                .build();
+        okHttpClient.newCall(request).enqueue(new Callback() {
+            @Override
+            public void onFailure(Request request, IOException e) {
+                Log.d(TAG, "onFailure: ");
+            }
+
+            @Override
+            public void onResponse(Response response) throws IOException {
+                String response_String = response.body().string();
+                Log.d(TAG, "onResponse: \n"+response_String);
+            }
+        });
+    }
+
 
 }

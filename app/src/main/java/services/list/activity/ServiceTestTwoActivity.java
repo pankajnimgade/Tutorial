@@ -85,6 +85,8 @@ public class ServiceTestTwoActivity extends AppCompatActivity {
             }
         }
 
+
+
         @Override
         public void onCreate() {
             // Start up the thread running the service.  Note that we create a
@@ -110,7 +112,7 @@ public class ServiceTestTwoActivity extends AppCompatActivity {
             mServiceHandler.sendMessage(msg);
 
             // If we get killed, after returning from here, restart
-            return START_STICKY;
+            return START_NOT_STICKY;
         }
 
         @Override

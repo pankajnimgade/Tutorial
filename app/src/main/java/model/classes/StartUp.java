@@ -56,12 +56,12 @@ public class StartUp extends Application {
         myListItems.add(new MyListItem("TestActivity", TestActivity.class));
         myListItems.add(new MyListItem("Network Call", NetworkCallListActivity.class));
         myListItems.add(new MyListItem("Google Map", GoogleMapListActivity.class));
+        myListItems.add(new MyListItem("Services Test", ServicesListActivity.class));
         myListItems.add(new MyListItem("Shared Preferences Test", SharedPreferencesActivity.class));
         myListItems.add(new MyListItem("Loader Test Test", LoadersListActivity.class));
         myListItems.add(new MyListItem("ListView Test", ListViewListActivity.class));
         myListItems.add(new MyListItem("RecyclerView Test", RecyclerViewListActivity.class));
         myListItems.add(new MyListItem("Spinner Test", SpinnerListActivity.class));
-        myListItems.add(new MyListItem("Services Test", ServicesListActivity.class));
         myListItems.add(new MyListItem("SQLite Test", SqliteListActivity.class));
         myListItems.add(new MyListItem("Custom Test", CustomListActivity.class));
         myListItems.add(new MyListItem("ViewPager List", ViewPagerListActivity.class));
