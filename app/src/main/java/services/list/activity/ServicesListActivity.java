@@ -38,6 +38,7 @@ public class ServicesListActivity extends AppCompatActivity {
         myListItems.add(new MyListItem("Service Test One", ServiceTestOneActivity.class));
         myListItems.add(new MyListItem("Service Test Two", ServiceTestTwoActivity.class));
         myListItems.add(new MyListItem("Service Test Three", ServiceThreeActivity.class));
+        myListItems.add(new MyListItem("Service Test Four", ServiceFourActivity.class));
 
         ArrayAdapter<MyListItem> adapter =
                 new ArrayAdapter<MyListItem>(getApplicationContext(), R.layout.simple_list_item_1, myListItems);
@@ -52,5 +53,7 @@ public class ServicesListActivity extends AppCompatActivity {
             }
         });
     }
+
+
 
 }

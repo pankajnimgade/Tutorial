@@ -657,8 +657,19 @@
 
         <service
             android:name="services.list.activity.ServiceThreeActivity$ExampleService"
-            android:exported="false"
-            />
+            android:exported="false" />
+
+        <activity
+            android:name="services.list.activity.ServiceFourActivity"
+            android:label="@string/title_activity_service_four"
+            android:parentActivityName="services.list.activity.ServicesListActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="services.list.activity.ServicesListActivity" />
+        </activity>
+        <service
+            android:name="services.list.activity.ServiceFourActivity$ServiceFourIntentService"
+            android:exported="false" />
     </application>
 
 </manifest>
