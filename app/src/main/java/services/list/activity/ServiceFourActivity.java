@@ -71,6 +71,7 @@ public class ServiceFourActivity extends AppCompatActivity {
         @Override
         public int onStartCommand(Intent intent, int flags, int startId) {
             Toast.makeText(getApplicationContext(), "ServiceFourIntentService starting", Toast.LENGTH_SHORT).show();
+            Log.d(TAG, "onStartCommand: start a work in a thread");
             return super.onStartCommand(intent, flags, startId);
         }
 
