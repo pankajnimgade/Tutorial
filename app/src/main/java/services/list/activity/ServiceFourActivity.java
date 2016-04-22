@@ -97,6 +97,7 @@ public class ServiceFourActivity extends AppCompatActivity {
                 // Restore interrupt status.
                 Thread.currentThread().interrupt();
             }
+            stopSelf();
             // as soon as this method returns the Service will stop
         }
 

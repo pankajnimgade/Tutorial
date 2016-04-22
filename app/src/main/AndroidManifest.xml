@@ -667,8 +667,22 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="services.list.activity.ServicesListActivity" />
         </activity>
+
         <service
             android:name="services.list.activity.ServiceFourActivity$ServiceFourIntentService"
+            android:exported="false" />
+
+        <activity
+            android:name="services.list.activity.ServiceFiveBoundActivity"
+            android:label="@string/title_activity_service_five_bound"
+            android:parentActivityName="services.list.activity.ServicesListActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="services.list.activity.ServicesListActivity" />
+        </activity>
+
+        <service
+            android:name="services.list.activity.ServiceFiveBoundActivity$ServiceFiveBounded"
             android:exported="false" />
     </application>
 
