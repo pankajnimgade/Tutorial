@@ -684,6 +684,15 @@
         <service
             android:name="services.list.activity.ServiceFiveBoundActivity$ServiceFiveBounded"
             android:exported="false" />
+
+        <activity
+            android:name="spinner.list.activities.SpinnerTestThreeActivity"
+            android:label="@string/title_activity_spinner_test_three"
+            android:parentActivityName="spinner.list.activities.SpinnerListActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="spinner.list.activities.SpinnerListActivity" />
+        </activity>
     </application>
 
 </manifest>

@@ -92,7 +92,7 @@ public class ServiceFiveBoundActivity extends AppCompatActivity {
 
         @Override
         public void onServiceConnected(ComponentName className,  IBinder service) {
-            // We've bound to ServiceFiveBounded, cast the IBinder and get LocalService instance
+            // We've bound to ServiceFiveBounded, cast the IBinder and get ServiceFiveBounded instance
             ServiceFiveBounded.LocalBinder binder = (ServiceFiveBounded.LocalBinder) service;
             mService = binder.getService();
             mBound = true;

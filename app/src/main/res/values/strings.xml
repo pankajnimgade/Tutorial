@@ -97,4 +97,5 @@
     <string name="title_activity_service_three">ServiceThreeActivity</string>
     <string name="title_activity_service_four">ServiceFourActivity</string>
     <string name="title_activity_service_five_bound">ServiceFiveBoundActivity</string>
+    <string name="title_activity_spinner_test_three">SpinnerTestThreeActivity</string>
 </resources>
