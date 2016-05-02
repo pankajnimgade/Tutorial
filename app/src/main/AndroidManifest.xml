@@ -693,6 +693,22 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="spinner.list.activities.SpinnerListActivity" />
         </activity>
+        <activity
+            android:name="data.binding.list.activities.DataBindingListActivity"
+            android:label="@string/title_activity_data_binding_list"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nimgade.pk.mytutorialapplication.MainActivity" />
+        </activity>
+        <activity
+            android:name="data.binding.list.activities.DataBindingTestOneActivity"
+            android:label="@string/title_activity_data_binding_test_one"
+            android:parentActivityName="data.binding.list.activities.DataBindingListActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="data.binding.list.activities.DataBindingListActivity" />
+        </activity>
     </application>
 
 </manifest>

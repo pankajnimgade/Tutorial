@@ -98,4 +98,6 @@
     <string name="title_activity_service_four">ServiceFourActivity</string>
     <string name="title_activity_service_five_bound">ServiceFiveBoundActivity</string>
     <string name="title_activity_spinner_test_three">SpinnerTestThreeActivity</string>
+    <string name="title_activity_data_binding_list">DataBindingListActivity</string>
+    <string name="title_activity_data_binding_test_one">DataBindingTestOneActivity</string>
 </resources>
