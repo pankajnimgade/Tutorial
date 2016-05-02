@@ -46,7 +46,7 @@ public class ListViewTestFiveActivity extends AppCompatActivity{
         listView.setAdapter(adapter);
     }
 
-    private class MyAdapter extends ArrayAdapter{
+    public class MyAdapter extends ArrayAdapter{
 
         private ArrayList<Item> items;
         private Context a_context;
@@ -97,7 +97,7 @@ public class ListViewTestFiveActivity extends AppCompatActivity{
             return row;
         }
 
-        private class ViewHolder{
+        public class ViewHolder{
             Button plus;
             TextView textView;
             TextView minus;
