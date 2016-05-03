@@ -8,6 +8,12 @@
 
     <include layout="@layout/my_custom_toolbar" />
 
+    <CheckBox
+        android:id="@+id/ListViewTestSevenActivity_select_all_checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select All" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -15,9 +21,9 @@
         android:orientation="vertical">
 
         <ListView
+            android:id="@+id/ListViewTestSevenActivity_listView"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/ListViewTestSevenActivity_listView" />
+            android:layout_height="wrap_content" />
     </LinearLayout>
 
 </LinearLayout>

@@ -19,8 +19,8 @@ import java.util.ArrayList;
 
 public class ListViewTestSevenActivity extends AppCompatActivity {
 
+    private CheckBox checkBox;
     private ListView listView;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,13 +35,25 @@ public class ListViewTestSevenActivity extends AppCompatActivity {
     }
 
     private void initializeUI() {
+        checkBox = (CheckBox) findViewById(R.id.ListViewTestSevenActivity_select_all_checkBox);
         listView = (ListView) findViewById(R.id.ListViewTestSevenActivity_listView);
         ArrayList<MyItem> myItems = new ArrayList<>();
         for (int i = 0; i < 50; i++) {
             myItems.add(new MyItem(false, "name_" + i + 1));
         }
-        MyAdapter myAdapter = new MyAdapter(getApplicationContext(), R.id.ListViewTestSevenActivity_item_textView, myItems);
+        final MyAdapter myAdapter = new MyAdapter(getApplicationContext(), R.id.ListViewTestSevenActivity_item_textView, myItems);
         listView.setAdapter(myAdapter);
+        checkBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked) {
+                    myAdapter.setSelectAll(true);
+                    myAdapter.notifyDataSetChanged();
+                }else{
+                    myAdapter.notifyDataSetChanged();
+                }
+            }
+        });
     }
 
     public class MyAdapter extends ArrayAdapter {
@@ -88,10 +100,10 @@ public class ListViewTestSevenActivity extends AppCompatActivity {
 
             if (isSelectAll) {
                 holder.isSelected_checkBox.setChecked(true);
-            }else {
+            } else {
                 holder.isSelected_checkBox.setChecked(myItem.isSelected());
             }
-            holder.item_Name_textView.setText(""+myItem.getItem_Name());
+            holder.item_Name_textView.setText("" + myItem.getItem_Name());
 
             notifyDataSetChanged();
             return row;
@@ -106,10 +118,12 @@ public class ListViewTestSevenActivity extends AppCompatActivity {
             isSelectAll = selectAll;
         }
 
-        public class ViewHolder {
-            CheckBox isSelected_checkBox;
-            TextView item_Name_textView;
-        }
+
+    }
+
+    public class ViewHolder {
+        CheckBox isSelected_checkBox;
+        TextView item_Name_textView;
     }
 
     private class MyItem {
