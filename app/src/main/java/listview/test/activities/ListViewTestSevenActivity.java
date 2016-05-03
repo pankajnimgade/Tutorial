@@ -50,6 +50,7 @@ public class ListViewTestSevenActivity extends AppCompatActivity {
                     myAdapter.setSelectAll(true);
                     myAdapter.notifyDataSetChanged();
                 }else{
+                    myAdapter.setSelectAll(false);
                     myAdapter.notifyDataSetChanged();
                 }
             }
