@@ -25,6 +25,7 @@ import activities.list.first.TestTextViewActivity;
 import activities.list.first.TestThreadActivity;
 import animation.list.test.AnimationListActivity;
 import custom.list.activities.CustomListActivity;
+import data.binding.list.activities.DataBindingListActivity;
 import drag.list.activities.DragListActivity;
 import google.map.list.activities.GoogleMapListActivity;
 import listview.test.activities.ListViewListActivity;
@@ -57,6 +58,7 @@ public class StartUp extends Application {
         myListItems.add(new MyListItem("Network Call", NetworkCallListActivity.class));
         myListItems.add(new MyListItem("Google Map", GoogleMapListActivity.class));
         myListItems.add(new MyListItem("Services Test", ServicesListActivity.class));
+        myListItems.add(new MyListItem("DataBinding Test", DataBindingListActivity.class));
         myListItems.add(new MyListItem("Shared Preferences Test", SharedPreferencesActivity.class));
         myListItems.add(new MyListItem("Loader Test Test", LoadersListActivity.class));
         myListItems.add(new MyListItem("ListView Test", ListViewListActivity.class));
