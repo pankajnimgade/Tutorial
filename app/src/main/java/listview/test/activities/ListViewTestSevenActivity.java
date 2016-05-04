@@ -21,6 +21,7 @@ public class ListViewTestSevenActivity extends AppCompatActivity {
 
     private CheckBox checkBox;
     private ListView listView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,11 +49,10 @@ public class ListViewTestSevenActivity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
                     myAdapter.setSelectAll(true);
-                    myAdapter.notifyDataSetChanged();
-                }else{
+                } else {
                     myAdapter.setSelectAll(false);
-                    myAdapter.notifyDataSetChanged();
                 }
+                myAdapter.notifyDataSetChanged();
             }
         });
     }
@@ -89,19 +89,17 @@ public class ListViewTestSevenActivity extends AppCompatActivity {
 
             final MyItem myItem = items.get(position);
 
-
-            holder.isSelected_checkBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-                @Override
-                public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                    if (isChecked) {
-                        myItem.setSelected(isChecked);
-                    }
-                }
-            });
-
             if (isSelectAll) {
                 holder.isSelected_checkBox.setChecked(true);
+                holder.isSelected_checkBox.setOnCheckedChangeListener(null);
             } else {
+                holder.isSelected_checkBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+                    @Override
+                    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                        myItem.setSelected(isChecked);
+
+                    }
+                });
                 holder.isSelected_checkBox.setChecked(myItem.isSelected());
             }
             holder.item_Name_textView.setText("" + myItem.getItem_Name());

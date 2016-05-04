@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="thirdHandler"
+            type="data.binding.list.activities.three.ThirdHandler" />
+
+        <variable
+            name="user"
+            type="data.binding.list.activities.three.User" />
+    </data>
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="data.binding.list.activities.three.DataBindingThreeActivity">
+
+        <include layout="@layout/my_custom_toolbar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/DataBindingThreeActivity_one_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:onClick="@{thirdHandler.onClickOne}"
+                android:text="One" />
+
+            <Button
+                android:id="@+id/DataBindingThreeActivity_two_button7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:onClick="@{thirdHandler.onClickTwo}"
+                android:text="Two" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

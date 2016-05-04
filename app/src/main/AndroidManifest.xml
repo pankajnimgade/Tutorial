@@ -717,6 +717,22 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="listview.test.activities.ListViewListActivity" />
         </activity>
+        <activity
+            android:name="data.binding.list.activities.two.DataBindingTwoActivity"
+            android:label="@string/title_activity_data_binding_two"
+            android:parentActivityName="data.binding.list.activities.DataBindingListActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="data.binding.list.activities.DataBindingListActivity" />
+        </activity>
+        <activity
+            android:name="data.binding.list.activities.three.DataBindingThreeActivity"
+            android:label="@string/title_activity_data_binding_three"
+            android:parentActivityName="data.binding.list.activities.DataBindingListActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="data.binding.list.activities.DataBindingListActivity" />
+        </activity>
     </application>
 
 </manifest>

@@ -13,6 +13,9 @@ import com.nimgade.pk.mytutorialapplication.R;
 
 import java.util.ArrayList;
 
+import data.binding.list.activities.one.DataBindingTestOneActivity;
+import data.binding.list.activities.three.DataBindingThreeActivity;
+import data.binding.list.activities.two.DataBindingTwoActivity;
 import model.classes.MyListItem;
 
 public class DataBindingListActivity extends AppCompatActivity {
@@ -34,17 +37,20 @@ public class DataBindingListActivity extends AppCompatActivity {
     }
 
     private void initializeUI() {
-        listView = (ListView)findViewById(R.id.DataBindingListActivity_listView);
+        listView = (ListView) findViewById(R.id.DataBindingListActivity_listView);
         ArrayList<MyListItem> myListItems = new ArrayList<>();
+        myListItems.add(new MyListItem("DataBinding Test one", DataBindingTestOneActivity.class));
+        myListItems.add(new MyListItem("DataBinding Test Two", DataBindingTwoActivity.class));
+        myListItems.add(new MyListItem("DataBinding Test Three", DataBindingThreeActivity.class));
 
         ArrayAdapter<MyListItem> adapter =
-                new ArrayAdapter<MyListItem>(getApplicationContext(),R.layout.simple_list_item_1, myListItems);
+                new ArrayAdapter<MyListItem>(getApplicationContext(), R.layout.simple_list_item_1, myListItems);
         listView.setAdapter(adapter);
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                MyListItem myListItem = (MyListItem) listView.getSelectedItem();
+                MyListItem myListItem = (MyListItem) listView.getItemAtPosition(position);
                 Intent myIntent = new Intent(getApplicationContext(), myListItem.getActivity_class());
                 startActivity(myIntent);
             }
