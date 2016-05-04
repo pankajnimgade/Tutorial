@@ -13,6 +13,7 @@ import com.nimgade.pk.mytutorialapplication.R;
 
 import java.util.ArrayList;
 
+import data.binding.list.activities.five.DataBindingFiveActivity;
 import data.binding.list.activities.four.DataBindingFourActivity;
 import data.binding.list.activities.one.DataBindingTestOneActivity;
 import data.binding.list.activities.three.DataBindingThreeActivity;
@@ -44,6 +45,7 @@ public class DataBindingListActivity extends AppCompatActivity {
         myListItems.add(new MyListItem("DataBinding Test Two", DataBindingTwoActivity.class));
         myListItems.add(new MyListItem("DataBinding Test Three", DataBindingThreeActivity.class));
         myListItems.add(new MyListItem("DataBinding Test Four", DataBindingFourActivity.class));
+        myListItems.add(new MyListItem("DataBinding Test Five", DataBindingFiveActivity.class));
 
         ArrayAdapter<MyListItem> adapter =
                 new ArrayAdapter<MyListItem>(getApplicationContext(), R.layout.simple_list_item_1, myListItems);

@@ -741,6 +741,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="data.binding.list.activities.DataBindingListActivity" />
         </activity>
+        <activity
+            android:name="data.binding.list.activities.five.DataBindingFiveActivity"
+            android:label="@string/title_activity_data_binding_five"
+            android:parentActivityName="data.binding.list.activities.DataBindingListActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="data.binding.list.activities.DataBindingListActivity" />
+        </activity>
     </application>
 
 </manifest>
