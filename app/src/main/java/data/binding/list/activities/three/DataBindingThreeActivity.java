@@ -10,6 +10,7 @@ import com.nimgade.pk.mytutorialapplication.databinding.ActivityDataBindingThree
 
 public class DataBindingThreeActivity extends AppCompatActivity {
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

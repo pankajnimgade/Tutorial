@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="user"
+            type="data.binding.list.activities.four.User" />
+
+        <variable
+            name="listener"
+            type="data.binding.list.activities.four.MyOnClickListener" />
+    </data>
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="data.binding.list.activities.four.DataBindingFourActivity">
+
+        <include layout="@layout/my_custom_toolbar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:orientation="vertical">
+
+            <ToggleButton
+                android:id="@+id/DataBindingFourActivity_on_off_toggleButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+
+                android:text="New ToggleButton" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Friend"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:visibility="@{user.friend ? View.VISIBLE : View.INVISIBLE}" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Not Friend"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:visibility="@{user.friend ? View.INVISIBLE : View.VISIBLE}" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

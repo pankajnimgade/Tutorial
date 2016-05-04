@@ -103,4 +103,5 @@
     <string name="title_activity_list_view_test_seven">ListViewTestSevenActivity</string>
     <string name="title_activity_data_binding_two">DataBindingTwoActivity</string>
     <string name="title_activity_data_binding_three">DataBindingThreeActivity</string>
+    <string name="title_activity_data_binding_four">DataBindingFourActivity</string>
 </resources>
