@@ -24,6 +24,7 @@ import activities.list.first.TestLayoutActivity;
 import activities.list.first.TestTextViewActivity;
 import activities.list.first.TestThreadActivity;
 import animation.list.test.AnimationListActivity;
+import constraint.layout.activities.ConstraintListActivity;
 import custom.list.activities.CustomListActivity;
 import data.binding.list.activities.DataBindingListActivity;
 import drag.list.activities.DragListActivity;
@@ -54,6 +55,7 @@ public class StartUp extends Application {
 
 
     private static void initializeList() {
+        myListItems.add(new MyListItem("ConstraintLayout", ConstraintListActivity.class));
         myListItems.add(new MyListItem("TestActivity", TestActivity.class));
         myListItems.add(new MyListItem("Network Call", NetworkCallListActivity.class));
         myListItems.add(new MyListItem("Google Map", GoogleMapListActivity.class));

@@ -749,6 +749,22 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="data.binding.list.activities.DataBindingListActivity" />
         </activity>
+        <activity
+            android:name="constraint.layout.activities.ConstraintListActivity"
+            android:label="@string/title_activity_constraint_list"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nimgade.pk.mytutorialapplication.MainActivity" />
+        </activity>
+        <activity
+            android:name="constraint.layout.activities.ConstraintOneActivity"
+            android:label="@string/title_activity_constraint_one"
+            android:parentActivityName="constraint.layout.activities.ConstraintListActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="constraint.layout.activities.ConstraintListActivity" />
+        </activity>
     </application>
 
 </manifest>

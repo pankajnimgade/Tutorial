@@ -105,4 +105,6 @@
     <string name="title_activity_data_binding_three">DataBindingThreeActivity</string>
     <string name="title_activity_data_binding_four">DataBindingFourActivity</string>
     <string name="title_activity_data_binding_five">DataBindingFiveActivity</string>
+    <string name="title_activity_constraint_list">ConstraintListActivity</string>
+    <string name="title_activity_constraint_one">ConstraintOneActivity</string>
 </resources>
